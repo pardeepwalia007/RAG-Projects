@@ -19,3 +19,24 @@ A `reflection_node` enables self-correction and retry logic when SQL execution o
 Finally, all successful paths converge at `summarize`, where retrieved context, computed results, and visual insights are synthesized into a grounded natural-language response before reaching `__end__`.
 
 This architecture demonstrates **agentic decision-making, conditional execution, self-healing logic, and hybrid RAG + SQL reasoning** in a single unified workflow.
+
+
+## Project Strcuture and Core Components
+Code/
+├── api.py
+├── app_langgraph.py
+├── ingestion.py
+├── intent_llm.py
+├── llm_sql_agent.py
+├── pdf_to_markdown.py
+├── sql_engine.py
+├── sql_orchestrator.py
+├── summarization_agent.py
+├── tests_logger.py
+├── ui.py
+├── vectorize.py
+
+eval/
+├── eval_questions.jsonl
+├── run_eval.py
+├── score_ragas.py
