@@ -1,0 +1,814 @@
+[
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. This calculation is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• AOV is not quantitatively defined in the observed data [NO_QUANTITATIVE_DATA_FOUND].\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix [4. Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.]"
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe prohibited analyses are customer churn, CLV, profitability, and marketing attribution. These analyses are restricted due to missing inputs.\n\nKEY FINDINGS:\n\n• Customer churn [8. Analytical Boundaries]\n• CLV [8. Analytical Boundaries]\n• Profitability [8. Analytical Boundaries]\n• Marketing attribution [8. Analytical Boundaries]\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched. csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nThe store ST-1 has shown a fluctuating trend in monthly units sold, with some months experiencing an increase and others a decrease. The data spans two years, providing insight into the sales patterns of the store.\n\nKEY FINDINGS:\n• Monthly Orders Definition [6]: 270 unique orders were made in 2020-01.\n• Monthly Orders Definition [6]: 242 unique orders were made in 2020-02.\n• Monthly Orders Definition [6]: 258 unique orders were made in 2020-03.\n• Monthly Orders Definition [6]: 235 unique orders were made in 2020-04.\n• Monthly Orders Definition [6]: 238 unique orders were made in 2020-05.\n• Monthly Orders Definition [6]: 229 unique orders were made in 2020-06.\n• Monthly Orders Definition [6]: 253 unique orders were made in 2020-07.\n• Monthly Orders Definition [6]: 257 unique orders were made in 2020-08.\n• Monthly Orders Definition [6]: 231 unique orders were made in 2020-09.\n• Monthly Orders Definition [6]: 239 unique orders were made in 2020-10.\n• Monthly Orders Definition [6]: 260 unique orders were made in 2020-11.\n• Monthly Orders Definition [6]: 259 unique orders were made in 2020-12.\n• Monthly Orders Definition [6]: 254 unique orders were made in 2021-01.\n• Monthly Orders Definition [6]: 220 unique orders were made in 2021-02.\n• Monthly Orders Definition [6]: 225 unique orders were made in 2021-03.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "describe the table",
+    "response": "EXECUTIVE SUMMARY: \nNo quantitative data was found, making it impossible to describe any tables or metrics.\n\nKEY FINDINGS:\n\n• No findings can be reported as no quantitative data was found [OBSERVED_DATA].\n\nRISKS / LIMITATIONS:\n- Missing values, duplicates, or anomalies must be surfaced. No silent corrections, imputations, or synthetic data generation are allowed."
+  },
+  {
+    "question": "describe the numeric coulums in this table",
+    "response": "EXECUTIVE SUMMARY: \nNo quantitative data was found, preventing analysis of numeric columns. The absence of data quality and integrity checks also raises concerns about the accuracy of any future findings.\n\nKEY FINDINGS:\n• None ( STATUS: NO_QUANTITATIVE_DATA_FOUND [ <OBSERVED_DATA> ] )\n\nRISKS / LIMITATIONS:\n- Missing values, duplicates, or anomalies must be surfaced. No silent corrections, imputations, or synthetic data generation are allowed."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. This calculation is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• AOV is not quantitatively defined in the observed data [NO_QUANTITATIVE_DATA_FOUND].\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix [4. Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.]"
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe prohibited analyses are customer churn, CLV, profitability, and marketing attribution. These analyses are restricted due to missing inputs.\n\nKEY FINDINGS:\n\n• Customer churn [8. Analytical Boundaries]\n• CLV [8. Analytical Boundaries]\n• Profitability [8. Analytical Boundaries]\n• Marketing attribution [8. Analytical Boundaries]\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched. csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nThe store ST-1 has shown a fluctuating trend in monthly units sold, with some months experiencing an increase and others a decrease. The data spans two years, providing insight into the sales patterns of the store.\n\nKEY FINDINGS:\n• Monthly Orders Definition [6]: 270 unique orders were made in 2020-01.\n• Monthly Orders Definition [6]: 242 unique orders were made in 2020-02.\n• Monthly Orders Definition [6]: 258 unique orders were made in 2020-03.\n• Monthly Orders Definition [6]: 235 unique orders were made in 2020-04.\n• Monthly Orders Definition [6]: 238 unique orders were made in 2020-05.\n• Monthly Orders Definition [6]: 229 unique orders were made in 2020-06.\n• Monthly Orders Definition [6]: 253 unique orders were made in 2020-07.\n• Monthly Orders Definition [6]: 257 unique orders were made in 2020-08.\n• Monthly Orders Definition [6]: 231 unique orders were made in 2020-09.\n• Monthly Orders Definition [6]: 239 unique orders were made in 2020-10.\n• Monthly Orders Definition [6]: 260 unique orders were made in 2020-11.\n• Monthly Orders Definition [6]: 259 unique orders were made in 2020-12.\n• Monthly Orders Definition [6]: 254 unique orders were made in 2021-01.\n• Monthly Orders Definition [6]: 220 unique orders were made in 2021-02.\n• Monthly Orders Definition [6]: 225 unique orders were made in 2021-03.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, calculated as the count of distinct transactions [BUSINESS_DEFINITIONS #2]. However, no quantitative data was found in the observed data.\n\nKEY FINDINGS:\n• NO_QUANTITATIVE_DATA_FOUND [OBSERVED_DATA]\n\nRISKS / LIMITATIONS:\n- Represents demand volume.\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nWe cannot compute churn based on the provided context. The observed data does not contain any quantitative information.\n\nKEY FINDINGS:\n\n• NO_QUANTITATIVE_DATA_FOUND [No specific rule defines this metric.]\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography. Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the formula for revenue?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue formula is Revenue = Price * Quantity. This formula is used for revenue computation at the row level.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data [OBSERVED_DATA].\n\nRISKS / LIMITATIONS:\n- Negative revenue values are treated as data-quality violations [RISKS_ALLOWED]. \n- The revenue column present in the dataset is treated as authoritative and pre-computed, with no discounts, refunds, taxes, promotions, or cost adjustments assumed unless explicitly present [RISKS_ALLOWED]."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. This calculation is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• AOV is not quantitatively defined in the observed data [NO_QUANTITATIVE_DATA_FOUND].\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix [4. Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.]"
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe prohibited analyses are customer churn, CLV, profitability, and marketing attribution. These analyses are restricted due to missing inputs.\n\nKEY FINDINGS:\n\n• Customer churn [8. Analytical Boundaries]\n• CLV [8. Analytical Boundaries]\n• Profitability [8. Analytical Boundaries]\n• Marketing attribution [8. Analytical Boundaries]\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched. csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nThe store ST-1 has shown a fluctuating trend in monthly units sold, with some months experiencing an increase and others a decrease. The data spans two years, providing insight into the sales patterns of the store.\n\nKEY FINDINGS:\n• Monthly Orders Definition [6]: 270 unique orders were made in 2020-01.\n• Monthly Orders Definition [6]: 242 unique orders were made in 2020-02.\n• Monthly Orders Definition [6]: 258 unique orders were made in 2020-03.\n• Monthly Orders Definition [6]: 235 unique orders were made in 2020-04.\n• Monthly Orders Definition [6]: 238 unique orders were made in 2020-05.\n• Monthly Orders Definition [6]: 229 unique orders were made in 2020-06.\n• Monthly Orders Definition [6]: 253 unique orders were made in 2020-07.\n• Monthly Orders Definition [6]: 257 unique orders were made in 2020-08.\n• Monthly Orders Definition [6]: 231 unique orders were made in 2020-09.\n• Monthly Orders Definition [6]: 239 unique orders were made in 2020-10.\n• Monthly Orders Definition [6]: 260 unique orders were made in 2020-11.\n• Monthly Orders Definition [6]: 259 unique orders were made in 2020-12.\n• Monthly Orders Definition [6]: 254 unique orders were made in 2021-01.\n• Monthly Orders Definition [6]: 220 unique orders were made in 2021-02.\n• Monthly Orders Definition [6]: 225 unique orders were made in 2021-03.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. This calculation is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• AOV is not quantitatively defined in the observed data [NO_QUANTITATIVE_DATA_FOUND].\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix [4. Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.]"
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe prohibited analyses are customer churn, CLV, profitability, and marketing attribution. These analyses are restricted due to missing inputs.\n\nKEY FINDINGS:\n\n• Customer churn [8. Analytical Boundaries]\n• CLV [8. Analytical Boundaries]\n• Profitability [8. Analytical Boundaries]\n• Marketing attribution [8. Analytical Boundaries]\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched. csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\n\nThe monthly units sold per store can be calculated by dividing the unique sales count for each month and store by the number of days in that month. This metric provides a clear picture of the sales performance of each store on a monthly basis.\n\nKEY FINDINGS:\n• Monthly units sold per store = Unique Sales Count / Number of Days in Month [Rule 1: \"Unique Sales Count\" is defined as the count of distinct sales transactions for a given time period, and Rule 2: \"Number of Days in Month\" is defined as the total number of days in the month being analyzed.]\n\nRISKS / LIMITATIONS:\n- The accuracy of this metric relies on the quality of the data, including the completeness and correctness of the unique sales count. [Risk 1: \"Data Quality Risks\", which states that \"Inaccurate or incomplete data can lead to incorrect conclusions.\"]"
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top 5 categories by number of unique transactions have been identified based on observed data. These categories represent the highest demand volume in the market.\n\nKEY FINDINGS:\n• CAT-10 has 163,849 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-4 has 151,636 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-2 has 128,731 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-3 has 117,142 unique transactions [Total Orders Definition: Count of distinct transactions].\n• CAT-7 has 116,812 unique transactions [Total Orders Definition: Count of distinct transactions].\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. This calculation is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• AOV is not quantitatively defined in the observed data [NO_QUANTITATIVE_DATA_FOUND].\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix [4. Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.]"
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe prohibited analyses are customer churn, CLV, profitability, and marketing attribution. These analyses are restricted due to missing inputs.\n\nKEY FINDINGS:\n\n• Customer churn [8. Analytical Boundaries]\n• CLV [8. Analytical Boundaries]\n• Profitability [8. Analytical Boundaries]\n• Marketing attribution [8. Analytical Boundaries]\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched. csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\n\nThe monthly units sold per store can be calculated by dividing the unique sales count for each month and store by the number of days in that month. This metric provides a clear picture of the sales performance of each store on a monthly basis.\n\nKEY FINDINGS:\n• Monthly units sold per store = Unique Sales Count / Number of Days in Month [Rule 1: \"Unique Sales Count\" is defined as the count of distinct sales transactions for a given time period, and Rule 2: \"Number of Days in Month\" is defined as the total number of days in the month being analyzed.]\n\nRISKS / LIMITATIONS:\n- The accuracy of this metric relies on the quality of the data, including the completeness and correctness of the unique sales count. [Risk 1: \"Data Quality Risks\", which states that \"Inaccurate or incomplete data can lead to incorrect conclusions.\"]"
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, calculated as the count of distinct transactions. The total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• Total Unique Orders: 1040200 [BUSINESS_DEFINITIONS #2]\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix due to its calculation being based on Total Revenue and Total Orders."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nWe cannot compute churn based on the provided context. The observed data does not contain any quantitative information.\n\nKEY FINDINGS:\n\n• NO_QUANTITATIVE_DATA_FOUND [No specific rule defines this metric.]\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography. Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the formula for revenue?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue formula is Revenue = Price * Quantity. This formula is used for revenue computation at the row level.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data [OBSERVED_DATA].\n\nRISKS / LIMITATIONS:\n- Negative revenue values are treated as data-quality violations [RISKS_ALLOWED]. \n- The revenue column present in the dataset is treated as authoritative and pre-computed, with no discounts, refunds, taxes, promotions, or cost adjustments assumed unless explicitly present [RISKS_ALLOWED]."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly available in the provided data, as it only includes aggregated revenue by month. However, we can analyze the monthly revenue trends during this period.\n\nKEY FINDINGS:\n• The highest revenue for CAT-3 was in 2022-12 with a value of 17160994 [5. Monthly Revenue Definition].\n• The lowest revenue for CAT-3 was in 2021-02 with a value of 14665748 [5. Monthly Revenue Definition].\n\nRISKS / LIMITATIONS:\n- Negative revenue values are treated as data-quality violations [2. Revenue Computation Rules]. \n- No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present [2. Revenue Computation Rules]."
+  },
+  {
+    "question": "Which store has the highest AOV but the lowest total units?",
+    "response": "EXECUTIVE SUMMARY: \nThe store with the highest Average Order Value (AOV) is ST-30, which has an AOV of 1087.7660313186425 [4]. However, this store does not have the lowest total units sold, as its Total Units Sold is 77571.\n\nKEY FINDINGS:\n• The store with the highest AOV is ST-30 (AOV: 1087.7660313186425) [4].\n• This store has a high volume of products sold, with a Total Units Sold of 77571 [3].\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography [6]. \n- Store churn refers only to activity presence, not closure or relocation [6]."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist.",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is 0. This result aligns with the assumption that all sales are valid unless explicitly flagged [5].\n\nKEY FINDINGS:\n• Total transactions: 0 [2]\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers, and no repeat-purchase or customer behavior assumptions are allowed [3]. \n- Products are identified by product_id, and launch_date indicates product introduction but does not invalidate observed sales. All sales are assumed valid unless explicitly flagged [5]."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe monthly units sold per store can be determined by examining the unique sales count for each store in each month. The data provided shows a varying number of units sold across different stores and months.\n\nKEY FINDINGS:\n\n• Store ST-01 (ID: 1) had 102 units sold in January 2024.\n• Store ST-02 (ID: 2) had 232 units sold in January 2024.\n• Store ST-01 (ID: 1) had 90 units sold in February 2024.\n• Store ST-02 (ID: 2) had 241 units sold in February 2024.\n• Store ST-03 (ID: 3) had 248 units sold in January 2020.\n• Store ST-04 (ID: 4) had 215 units sold in February 2020.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Sales trend between Jan and Dec in 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, also known as Total Orders, is used to measure business scale.\n\nKEY FINDINGS:\n• The count(sale_id) is 213275.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed. \n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "Sales trend between Jan in 2023 and Dec in 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, which is the definition for Total Orders, has been calculated.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 213275.\n\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in revenue across the months. The highest total_revenue was observed in October at $107,562,835.\n\nKEY FINDINGS:\n• The sale_year_month with the lowest total_revenue is February 2023 at $96,727,350.\n• The sale_year_month with the highest total_revenue is October 2023 at $107,562,835.\n• Partial months may exist and must not be normalized or extrapolated.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. \n- Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, also known as Total Orders, is used to measure business scale.\n\nKEY FINDINGS:\n• The count(sale_id) is 213275.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed. \n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "Which store has the highest AOV but the lowest total units?",
+    "response": "EXECUTIVE SUMMARY: \nThe store with the highest AOV is ST-30, with an average revenue per order of $1087.77.\nThis store also has a total quantity sold of 77571 units.\n\nKEY FINDINGS:\n• The store_id is ST-30.\n• The AOV for this store is 1087.7660313186425.\n• The Total_Quantity_Sold for this store is 77571.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Store &amp; Organizational Rules Stores are identified by store_id with no assumed hierarchy or geography."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a transaction_count of 163849.\n• Category_ID CAT-4 has a transaction_count of 151636.\n• Category_ID CAT-2 has a transaction_count of 128731.\n• Category_ID CAT-3 has a transaction_count of 117142.\n• Category_ID CAT-7 has a transaction_count of 116812.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. AOV is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data.\n• Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe Sales_enriched.csv dataset is the only source of data for this analytical system. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n\nKEY FINDINGS:\n• Customer churn and CLV (Customer Lifetime Value) are prohibited due to missing inputs.\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows that the number of units sold per store varies significantly across different months and stores. The highest number of units sold in a single month was observed in Aggregated_Fact 989.\n\nKEY FINDINGS:\n\n• In January 2022, Store ID ST-24 sold 218 units.\n• In September 2023, Store ID ST-60 sold 243 units.\n• In October 2024, Store ID ST-2 sold 290 units.\n• The highest number of units sold in a single month was observed in Aggregated_Fact 989.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY:\nThe total orders metric is defined as a single value, with all observed data points indicating a value of 1.\n\nKEY FINDINGS:\n• The total unique orders is consistently reported as 1 across all 1000 observations.\nRISKS / LIMITATIONS: \n- None cited in the provided <OBSERVED_DATA> or <BUSINESS_DEFINITIONS>."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in revenue. The highest total_revenue is observed in the month of August, while the lowest is seen in April.\n\nKEY FINDINGS:\n• The sale_year_month with the highest total_revenue is 2023-08, at 107067689.\n• The sale_year_month with the second-highest total_revenue is 2023-12, at 106035408.\n• The sale_year_month with the lowest total_revenue is 2023-04, at 104489459.\n\nRISKS / LIMITATIONS:\n Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nThere is no quantitative data found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n\n• No quantitative data was found.\n• Stores are identified by store_id with no assumed hierarchy or geography.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed."
+  },
+  {
+    "question": "What is the formula for revenue?",
+    "response": "EXECUTIVE SUMMARY: \nRevenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed dataset.\n• The revenue column present in the dataset is treated as authoritative and pre-computed.\n\nRISKS / LIMITATIONS:\n- Negative revenue values are treated as data-quality violations. \n- No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, also known as Total Orders, is used to measure business scale.\n\nKEY FINDINGS:\n• The count(sale_id) is 213275.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed. \n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Which store has the highest AOV but the lowest total units?",
+    "response": "EXECUTIVE SUMMARY: \nThe store with the highest AOV is ST-30, with an average revenue per order of $1087.77.\nThis store also has a total quantity sold of 77571 units.\n\nKEY FINDINGS:\n• The store_id is ST-30.\n• The AOV for this store is 1087.7660313186425.\n• The Total_Quantity_Sold for this store is 77571.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Store &amp; Organizational Rules Stores are identified by store_id with no assumed hierarchy or geography."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist.",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is zero. This aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The count(sale_id) is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY:\nThe report provides an overview of the top categories by number of unique transactions. The data highlights the performance of various product categories.\n\nKEY FINDINGS:\n• The Category_ID CAT-10 has 163849 unique_transactions.\n• The Category_ID CAT-4 has 151636 unique_transactions.\n• The Category_ID CAT-2 has 128731 unique_transactions.\n• The Category_ID CAT-3 has 117142 unique_transactions.\n• The Category_ID CAT-7 has 116812 unique_transactions.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY:\nAOV calculation is not applicable due to lack of quantitative data. No AOV values can be determined.\n\nKEY FINDINGS:\n• NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- The revenue column present in the dataset is treated as authoritative and pre-computed, which may impact AOV calculation accuracy if not properly accounted for."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY:\nThis report focuses on prohibited analyses within the provided dataset. The following analyses are explicitly restricted.\n\nKEY FINDINGS:\n• Customer churn is prohibited.\n• CLV (Customer Lifetime Value) is prohibited.\n• Profitability is prohibited.\n• Marketing attribution is prohibited.\n\nRISKS / LIMITATIONS:\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data. \n- Customer churn, CLV, profitability, and marketing attribution are explicitly prohibited due to missing inputs."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows the total quantity sold for each store and month. This information can be used to analyze product movement patterns.\n\nKEY FINDINGS:\n• The store_id ST-52 had a total_quantity_sold of 1238 on sale_month 2021-02-01.\n• The store_id ST-47 had a total_quantity_sold of 1230 on sale_month 2020-10-01.\n• The store_id ST-24 had a total_quantity_sold of 1384 on sale_month 2021-03-01.\n• The store_id ST-46 had a total_quantity_sold of 1369 on sale_month 2022-03-01.\n• The store_id ST-54 had a total_quantity_sold of 1497 on sale_month 2021-12-01.\n• The store_id ST-12 had a total_quantity_sold of 1209 on sale_month 2023-02-01.\n• The store_id ST-58 had a total_quantity_sold of 1287 on sale_month 2022-07-01.\n• The store_id ST-2 had a total_quantity_sold of 1374 on sale_month 2022-04-01.\n• The store_id ST-1 had a total_quantity_sold of 1266 on sale_month 2022-07-01.\n• The store_id ST-5 had a total_quantity_sold of 1143 on sale_month 2021-09-01.\n• The store_id ST-48 had a total_quantity_sold of 1310 on sale_month 2021-11-01.\n• The store_id ST-13 had a total_quantity_sold of 1282 on sale_month 2023-11-01.\n• The store_id ST-69 had a total_quantity_sold of 1423 on sale_month 2023-01-01.\n• The store_id ST-11 had a total_quantity_sold of 1200 on sale_month 2023-03-01.\n• The store_id ST-11 had a total_quantity_sold of 1258 on sale_month 2023-09-01.\n• The store_id ST-23 had a total_quantity_sold of 1288 on sale_month 2023-02-01.\n• The store_id ST-66 had a total_quantity_sold of 1387 on sale_month 2020-09-01.\n• The store_id ST-63 had a total_quantity_sold of 1496 on sale_month 2024-03-01.\n• The store_id ST-6 had a total_quantity_sold of 1441 on sale_month 2022-07-01.\n• The store_id ST-34 had a total_quantity_sold of 1326 on sale_month 2024-10-01.\n• The store_id ST-7 had a total_quantity_sold of 1393 on sale_month 2022-07-01.\n• The store_id ST-8 had a total_quantity_sold of 1240 on sale_month 2020-02-01.\n• The store_id ST-43 had a total_quantity_sold of 1358 on sale_month 2022-05-01.\n• The store_id ST-64 had a total_quantity_sold of 1348 on sale_month 2024-08-01.\n• The store_id ST-65 had a total_quantity_sold of 1406 on sale_month 2022-07-01.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY:\nTotal orders represent demand volume and are calculated as the count of distinct transactions.\n\nKEY FINDINGS:\n• The total unique orders is 1040200.\n\nRISKS / LIMITATIONS:\n- Total Orders Definition: Count of distinct transactions. Calculation: COUNT(DISTINCT sale_id). Represents demand volume.\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nThe sales trend between Jan and Dec of 2023 shows fluctuations in revenue across the months. The highest total revenue was recorded in July 2023, while the lowest was in February 2023.\n\nKEY FINDINGS:\n• The sale_year_month is 2023-01, the total_revenue is 106812688.\n• The sale_year_month is 2023-07, the total_revenue is 106970893.\n• The sale_year_month is 2023-02, the total_revenue is 96727350.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY:\nNo quantitative data was found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n• No_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography. Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the formula for revenue?",
+    "response": "EXECUTIVE SUMMARY:\nThe task requires answering a question about the formula for revenue based on provided information. However, no quantitative data is found in the observed data.\n\nKEY FINDINGS:\n• No specific facts can be restated from <OBSERVED_DATA> as it only contains a status message indicating \"NO_QUANTITATIVE_DATA_FOUND\".\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY:\nThe report provides an overview of the total transactions in 2021. The data is based on final calculated totals returned by the system.\n\nKEY FINDINGS:\n• Total transactions in 2021: 213275\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "I cannot provide a response that restates facts from the observed data, as there is no quantitative data found. Is there anything else I can help you with?"
+  },
+  {
+    "question": "Which store has the highest AOV but the lowest total units?",
+    "response": "I cannot provide a response that involves calculations or inferences. Is there anything else I can help you with?"
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist.",
+    "response": "EXECUTIVE SUMMARY:\nTotal transactions for a product that doesn't exist is 0. This result indicates no sales were recorded.\n\nKEY FINDINGS:\n• The total_transactions is 0.\n \nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has 163849 unique_transactions.\n• Category_ID CAT-4 has 151636 unique_transactions.\n• Category_ID CAT-2 has 128731 unique_transactions.\n• Category_ID CAT-3 has 117142 unique_transactions.\n• Category_ID CAT-7 has 116812 unique_transactions.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. AOV is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data.\n• Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe Sales_enriched.csv dataset is the only source of data for this analytical system. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n\nKEY FINDINGS:\n• Customer churn and CLV (Customer Lifetime Value) are prohibited due to missing inputs.\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nMonthly units sold per store is not a defined metric in the provided information.\n\nKEY FINDINGS:\n• No quantitative data was found.\n• Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date.\n\nRISKS / LIMITATIONS:\n- Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nThere is no quantitative data found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n\n• No quantitative data was found.\n• Stores are identified by store_id with no assumed hierarchy or geography.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a transaction_count of 163849.\n• Category_ID CAT-4 has a transaction_count of 151636.\n• Category_ID CAT-2 has a transaction_count of 128731.\n• Category_ID CAT-3 has a transaction_count of 117142.\n• Category_ID CAT-7 has a transaction_count of 116812.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. AOV is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data.\n• Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe Sales_enriched.csv dataset is the only source of data for this analytical system. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n\nKEY FINDINGS:\n• Customer churn and CLV (Customer Lifetime Value) are prohibited due to missing inputs.\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows that the number of units sold per month varies across different stores. The monthly units sold per store can be determined by examining the unique sales count for each store and month.\n\nKEY FINDINGS:\n\n• Store ST-24 had a unique sales count of 251 in March 2020.\n• Store ST-24 had a unique sales count of 260 in August 2021.\n• Store ST-24 had a unique sales count of 260 in December 2022.\n• Store ST-25 (not present in the data) is not mentioned, implying that only stores ST-23 and ST-24 are considered.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in monthly sales. The highest number of sales was observed in the month of March with 18165 units sold.\n\nKEY FINDINGS:\n• The sale_year_month is 2023-12, the num_sales is 18076.\n• The sale_year_month is 2023-11, the num_sales is 17794.\n• The sale_year_month is 2023-10, the num_sales is 18177.\n• The sale_year_month is 2023-09, the num_sales is 17600.\n• The sale_year_month is 2023-08, the num_sales is 18093.\n• The sale_year_month is 2023-07, the num_sales is 18105.\n• The sale_year_month is 2023-06, the num_sales is 17529.\n• The sale_year_month is 2023-05, the num_sales is 18049.\n• The sale_year_month is 2023-04, the num_sales is 17654.\n• The sale_year_month is 2023-03, the num_sales is 18165.\n• The sale_year_month is 2023-02, the num_sales is 16205.\n• The sale_year_month is 2023-01, the num_sales is 18006.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nThere is no quantitative data found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n\n• No quantitative data was found.\n• Stores are identified by store_id with no assumed hierarchy or geography.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed."
+  },
+  {
+    "question": "What is the formula for revenue?",
+    "response": "EXECUTIVE SUMMARY: \nRevenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed dataset.\n• The revenue column present in the dataset is treated as authoritative and pre-computed.\n\nRISKS / LIMITATIONS:\n- Negative revenue values are treated as data-quality violations. \n- No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, also known as Total Orders, is used to measure business scale.\n\nKEY FINDINGS:\n• The count(sale_id) is 213275.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed. \n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no explicit mention of category-level revenue or any specific product categories.\n\nKEY FINDINGS:\n• There are no facts in <OBSERVED_DATA> that explicitly mention a category named \"CAT-3\".\n• The total revenue for various months between 2021 and 2023 is provided, but it does not specify the category.\n• The sale_year_month ranges from 2021-01 to 2023-12.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Which store has the highest AOV but the lowest total units?",
+    "response": "EXECUTIVE SUMMARY: \nThe store with the highest AOV is ST-30, with an average revenue per order of $1087.77.\nThis store also has a total quantity sold of 77571 units.\n\nKEY FINDINGS:\n• The store_id is ST-30.\n• The AOV for this store is 1087.7660313186425.\n• The Total_Quantity_Sold for this store is 77571.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Store &amp; Organizational Rules Stores are identified by store_id with no assumed hierarchy or geography."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist.",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is 0. This result aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The total_transactions is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in the number of sales across different months. The data indicates that some months had higher sales numbers than others.\n\nKEY FINDINGS:\n• The sale_year_month is 2023-01, the num_sales is 18006.\n• The sale_year_month is 2023-02, the num_sales is 16205.\n• The sale_year_month is 2023-03, the num_sales is 18165.\n• The sale_year_month is 2023-04, the num_sales is 17654.\n• The sale_year_month is 2023-05, the num_sales is 18049.\n• The sale_year_month is 2023-06, the num_sales is 17529.\n• The sale_year_month is 2023-07, the num_sales is 18105.\n• The sale_year_month is 2023-08, the num_sales is 18093.\n• The sale_year_month is 2023-09, the num_sales is 17600.\n• The sale_year_month is 2023-10, the num_sales is 18177.\n• The sale_year_month is 2023-11, the num_sales is 17794.\n• The sale_year_month is 2023-12, the num_sales is 18076.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, which is the definition for Total Orders, has been calculated.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 213275.\n\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no explicit mention of category-level revenue or any specific category named \"CAT-3\".\n\nKEY FINDINGS:\n• There are no facts in <OBSERVED_DATA> that explicitly mention a category named \"CAT-3\".\n• The sale_year_month ranges from 2021-01 to 2023-12, with total_revenue values provided for each month.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023?",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no explicit mention of category-level revenue or any specific product categories.\n\nKEY FINDINGS:\n• There are no specific facts from <OBSERVED_DATA> that relate to a \"CAT-3\" category.\n• The total revenue for various months between 2021 and 2023 is provided in the data, but it does not specify which category these revenues belong to.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in the number of sales across different months. The data indicates that some months had higher sales numbers than others.\n\nKEY FINDINGS:\n• In January 2023, there were 18006 sales.\n• In February 2023, there were 16205 sales.\n• In March 2023, there were 18165 sales.\n• In April 2023, there were 17654 sales.\n• In May 2023, there were 18049 sales.\n• In June 2023, there were 17529 sales.\n• In July 2023, there were 18105 sales.\n• In August 2023, there were 18093 sales.\n• In September 2023, there were 17600 sales.\n• In October 2023, there were 18177 sales.\n• In November 2023, there were 17794 sales.\n• In December 2023, there were 18076 sales.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, which is the definition for Total Orders, has been calculated.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 213275.\n\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has 163849 unique_transactions.\n• Category_ID CAT-4 has 151636 unique_transactions.\n• Category_ID CAT-2 has 128731 unique_transactions.\n• Category_ID CAT-3 has 117142 unique_transactions.\n• Category_ID CAT-7 has 116812 unique_transactions.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows that the monthly units sold per store vary significantly across different stores. The top-selling stores in terms of monthly units sold are ST-9, ST-73, and ST-41.\n\nKEY FINDINGS:\n\n• ST-9 sold 1510 units in December 2023.\n• ST-73 sold 1283 units in September 2021 and 1283 units in October 2023.\n• ST-41 sold 1446 units in November 2021 and 1341 units in March 2022.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in revenue. The highest total_revenue was observed in August 2023.\n\nKEY FINDINGS:\n• The sale_year_month with the highest total_revenue is 2023-08, at 107067689.\n• The sale_year_month with the lowest total_revenue is 2023-06, at 103648355.\n• The sale_year_month with the second-highest total_revenue is 2023-10, at 107562835.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a key metric for measuring demand volume. The total number of transactions represents the count of distinct sales.\n\nKEY FINDINGS:\n• Total transactions_2021 is 213275.\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. AOV is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data.\n• Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe Sales_enriched.csv dataset is the only source of data for this analytical system. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n\nKEY FINDINGS:\n• Customer churn and CLV (Customer Lifetime Value) are prohibited due to missing inputs.\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "Can we compute churn?What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe total revenue is $587,111,274. Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nKEY FINDINGS:\n• The total revenue is 587,111,274.\n• No information is available to compute churn or analyze the revenue trend for CAT-3 between 2021 and 2023 as these metrics are not explicitly mentioned in <OBSERVED_DATA>.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a transaction_count of 163849.\n• Category_ID CAT-4 has a transaction_count of 151636.\n• Category_ID CAT-2 has a transaction_count of 128731.\n• Category_ID CAT-3 has a transaction_count of 117142.\n• Category_ID CAT-7 has a transaction_count of 116812.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe monthly units sold per store can be determined by examining the unique sales count for each store in each month. The data provided shows a varying number of units sold across different stores and months.\n\nKEY FINDINGS:\n\n• Store ST-01 (ID: 1) had 102 units sold in January 2024.\n• Store ST-02 (ID: 2) had 232 units sold in January 2024.\n• Store ST-01 (ID: 1) had 90 units sold in February 2024.\n• Store ST-02 (ID: 2) had 241 units sold in February 2024.\n• Store ST-03 (ID: 3) had 248 units sold in January 2020.\n• Store ST-04 (ID: 4) had 215 units sold in February 2020.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nThe sales trend between Jan and Dec of 2023 shows fluctuations in monthly sales. The highest number of sales was recorded in October with 18177 units sold.\n\nKEY FINDINGS:\n• The sale_year_month is 2023-10, the num_sales is 18177.\n• The sale_year_month is 2023-01, the num_sales is 18006.\n• The sale_year_month is 2023-12, the num_sales is 18076.\n• The sale_year_month is 2023-11, the num_sales is 17794.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY:\nThe report provides an overview of the top categories by number of unique transactions. The data highlights the transaction counts for each category.\n\nKEY FINDINGS:\n• The Category_ID CAT-10 has a transaction_count of 163849.\n• The Category_ID CAT-4 has a transaction_count of 151636.\n• The Category_ID CAT-2 has a transaction_count of 128731.\n• The Category_ID CAT-3 has a transaction_count of 117142.\n• The Category_ID CAT-7 has a transaction_count of 116812.\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data provided shows the monthly unique sales count for store ST-1 over a period of two years. The report focuses on the \"Monthly units sold per store\" metric.\n\nKEY FINDINGS:\n• The unique_sales_count for January 2020 is 270.\n• The unique_sales_count for December 2021 is 221.\n• The unique_sales_count for January 2022 is 261.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. \n- Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY:\nThe report provides an overview of the total transactions in 2021. The data is based on final calculated totals returned by the system.\n\nKEY FINDINGS:\n• Total transactions: 213275\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers.\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY:\nAOV calculation is not applicable due to lack of quantitative data. No AOV values can be determined.\n\nKEY FINDINGS:\n• NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- The revenue column present in the dataset is treated as authoritative and pre-computed, which may impact AOV calculation accuracy if not properly accounted for."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY:\nTotal orders represent demand volume and are calculated as the count of distinct transactions.\n\nKEY FINDINGS:\n• The total unique orders is 1040200.\n\nRISKS / LIMITATIONS:\n- Total Orders Definition: Count of distinct transactions. Calculation: COUNT(DISTINCT sale_id). Represents demand volume.\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY:\nThis report focuses on prohibited analyses within the provided dataset. The following analyses are explicitly restricted.\n\nKEY FINDINGS:\n• Customer churn is prohibited.\n• CLV (Customer Lifetime Value) is prohibited.\n• Profitability is prohibited.\n• Marketing attribution is prohibited.\n\nRISKS / LIMITATIONS:\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data. \n- Customer churn, CLV, profitability, and marketing attribution are explicitly prohibited due to missing inputs."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY:\nNo quantitative data was found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n• No_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography. Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "I can't provide a response that involves calculations or inferences. However, I can help you restate the facts provided in the <OBSERVED_DATA> section.\n\nEXECUTIVE SUMMARY:\nThere is no information about CAT-3 revenue trend between 2021 and 2023 in the provided data.\n\nKEY FINDINGS:\n\n• The sale_year_month ranges from 2021-01 to 2023-12.\n• There are total_revenue values for each sale_year_month, but there is no specific information about CAT-3 revenue trend.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY:\nTotal transactions for a product that doesn't exist is zero. This result indicates no sales have been recorded.\n\nKEY FINDINGS:\n• The count of distinct transactions is 0.\n• There are no rows in the observed data, only one row showing the first row out of 1 total rows (TRUNCATED).\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. \n- All sales are assumed valid unless explicitly flagged."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe sales trend between Jan and Dec of 2023 shows fluctuations in the number of sales. The data indicates that there are partial months, which must not be normalized or extrapolated.\n\nKEY FINDINGS:\n• The sale_year_month is 2023-01, with num_sales being 18006.\n• The sale_year_month is 2023-02, with num_sales being 16205.\n• The sale_year_month is 2023-03, with num_sales being 18165.\n• The sale_year_month is 2023-04, with num_sales being 17654.\n• The sale_year_month is 2023-05, with num_sales being 18049.\n• The sale_year_month is 2023-06, with num_sales being 17529.\n• The sale_year_month is 2023-07, with num_sales being 18105.\n• The sale_year_month is 2023-08, with num_sales being 18093.\n• The sale_year_month is 2023-09, with num_sales being 17600.\n• The sale_year_month is 2023-10, with num_sales being 18177.\n• The sale_year_month is 2023-11, with num_sales being 17794.\n• The sale_year_month is 2023-12, with num_sales being 18076.\n\nRISKS / LIMITATIONS:\nTemporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: \nThe top categories by number of unique transactions are identified based on the provided data. The following categories have been observed.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a transaction_count of 163849.\n• Category_ID CAT-4 has a transaction_count of 151636.\n• Category_ID CAT-2 has a transaction_count of 128731.\n• Category_ID CAT-3 has a transaction_count of 117142.\n• Category_ID CAT-7 has a transaction_count of 116812.\n\nRISKS / LIMITATIONS:\nOrders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows that the number of units sold per month varies across different stores. The monthly units sold per store can be determined by examining the unique sales count for each store and month.\n\nKEY FINDINGS:\n\n• Store ST-24 had a unique sales count of 251 in March 2020.\n• Store ST-24 had a unique sales count of 260 in August 2021.\n• Store ST-24 had a unique sales count of 260 in December 2022.\n• Store ST-25 (not present in the data) is not mentioned, implying that only stores ST-23 and ST-24 are considered.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions in 2021 is a metric that represents demand volume. The count of distinct transactions, which is the definition for Total Orders, has been calculated.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 213275.\n\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: \nAOV is calculated as Total Revenue divided by Total Orders. AOV is sensitive to pricing and product mix.\n\nKEY FINDINGS:\n• No quantitative data was found in the observed data.\n• Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order. Calculation: Total Revenue / Total Orders. Sensitive to pricing and product mix.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: \nThe Sales_enriched.csv dataset is the only source of data for this analytical system. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n\nKEY FINDINGS:\n• Customer churn and CLV (Customer Lifetime Value) are prohibited due to missing inputs.\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: \nThere is no quantitative data found in the observed dataset. Therefore, we cannot compute churn.\n\nKEY FINDINGS:\n\n• No quantitative data was found.\n• Stores are identified by store_id with no assumed hierarchy or geography.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no explicit mention of category-level revenue or any specific product categories.\n\nKEY FINDINGS:\n• There are no facts in <OBSERVED_DATA> that explicitly relate to a \"CAT-3\" category.\n• The total_revenue for various sale_year_month periods between 2021 and 2023 ranges from 14665748 (Aggregated_Fact 35) to 17366753 (Aggregated_Fact 6).\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is zero. This aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nMonthly units sold per store is not directly answerable with the provided data, as it does not contain information about individual stores or their sales.\n\nKEY FINDINGS:\n• The sale_year_month is 2022-12, the total_units_sold is 99662.\n• The sale_year_month is 2023-01, the total_units_sold is 99528.\n• The sale_year_month is 2024-03, the total_units_sold is 100769.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. \n- Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no information about CAT-3. However, we can analyze the overall revenue trend.\n\nKEY FINDINGS:\n• The total revenue in 2021 was $17211472 (Aggregated_Fact 1).\n• The total revenue in 2022 was $17160994 (Aggregated_Fact 24).\n• The total revenue in 2023 was $16190525 (Aggregated_Fact 36).\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is zero. This aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: \nMonthly units sold per store is not directly answerable with the provided data, as it does not contain information about individual stores or their sales.\n\nKEY FINDINGS:\n• The sale_year_month is 2022-05, the total_units_sold is 100315.\n• The sale_year_month is 2021-03, the total_units_sold is 100905.\n• The sale_year_month is 2023-10, the total_units_sold is 99792.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. \n- Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the total number of unique orders is 1040200.\n\nKEY FINDINGS:\n• The total number of unique orders is 1040200.\n• This count represents demand volume.\n\nRISKS / LIMITATIONS:\n- Sensitive to pricing and product mix."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no information about CAT-3. However, we can analyze the overall revenue trend.\n\nKEY FINDINGS:\n• The total revenue in 2021 was $17211472 (Aggregated_Fact 1).\n• The total revenue in 2022 was $17160994 (Aggregated_Fact 24).\n• The total revenue in 2023 was $16190525 (Aggregated_Fact 36).\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is zero. This aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY:\nThe data shows that the monthly units sold per store varies across different stores and months. The highest number of units sold in a month is observed for some stores.\n\nKEY FINDINGS:\n\n• ST-69 sold 1494 units in August 2022.\n• ST-8 sold 1443 units in July 2024.\n• ST-30 sold 1443 units in June 2023.\n• ST-40 sold 1425 units in January 2024.\n• ST-11 sold 1427 units in October 2023.\n\nRISKS / LIMITATIONS:\nNone cited."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: \nTotal orders represent demand volume, and the count of distinct transactions is used for this metric.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 1040200.\nRISKS / LIMITATIONS:\n- Total Orders Definition: Count of distinct transactions. Calculation: COUNT(DISTINCT sale_id). Represents demand volume."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: \nThe revenue trend for CAT-3 between 2021 and 2023 is not directly answerable with the provided data, as there is no explicit mention of category-level revenue or any specific product categories.\n\nKEY FINDINGS:\n• There are no facts in <OBSERVED_DATA> that explicitly mention CAT-3.\n• The total_revenue for various sale_year_month periods between 2021 and 2023 ranges from 14665748 to 17366753.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. \n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: \nTotal transactions for a product that doesn't exist is zero. This aligns with the definition of Total Orders, which represents demand volume.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 0.\nRISKS / LIMITATIONS:\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: The data shows monthly units sold for various stores across different years and months. Each entry represents the total units sold for a specific store in a given month.\n\nKEY FINDINGS:\n• Store ST-20 had 1420 total units sold in July 2021.\n• Store ST-27 had 1297 total units sold in February 2021.\n• Store ST-52 had 1415 total units sold in July 2020.\n• Store ST-21 had 1356 total units sold in November 2023.\n• Store ST-75 had 1385 total units sold in July 2023.\n• Store ST-24 had 1194 total units sold in January 2023.\n• Store ST-55 had 1441 total units sold in January 2021.\n• Store ST-41 had 1100 total units sold in June 2024.\n• Store ST-9 had 1175 total units sold in December 2020.\n• Store ST-26 had 1417 total units sold in January 2022.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: The total orders metric is defined based on the count of distinct transactions.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 1,040,200. (Definition and calculation from BUSINESS_DEFINITIONS)\n\nRISKS / LIMITATIONS:\n- Count of distinct transactions represents demand volume.\n- Calculation: COUNT(DISTINCT sale_id)."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between 2021 and 2023 is not directly provided in the observed data. Therefore, no specific findings can be stated based on the given information.\n\nKEY FINDINGS:\n• None of the Aggregated_Facts in <OBSERVED_DATA> specify a category or provide revenue trends for CAT-3 specifically.\n\nRISKS / LIMITATIONS:\n- Revenue Computation Rules: Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Monthly Revenue Definition: Revenue aggregated by month. Calculation: SUM(revenue) GROUP BY sale_year_month. Used for trend analysis."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: The total transactions for a product that does not exist is 0, as there are no distinct sale IDs recorded.\n\nKEY FINDINGS:\n• Aggregated_Fact 1 states the count(DISTINCT sale_id) is 0.\n  \nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- All sales are assumed valid unless explicitly flagged."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: The data shows the total units sold for various stores across different months. Each entry represents the final calculated totals for monthly unit sales per store.\n\nKEY FINDINGS:\n• Store ST-26 had a total of 1290 units sold in December 2022.\n• Store ST-28 had a total of 1421 units sold in June 2022.\n• Store ST-42 had a total of 1303 units sold in May 2022.\n• Store ST-55 had a total of 1279 units sold in July 2021.\n• Store ST-20 had a total of 1325 units sold in January 2021.\n• Store ST-33 had a total of 1274 units sold in August 2022.\n• Store ST-41 had a total of 1387 units sold in April 2022.\n• Store ST-12 had a total of 1209 units sold in February 2023.\n• Store ST-14 had a total of 1322 units sold in July 2022.\n• Store ST-70 had a total of 1390 units sold in December 2023.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: The total orders metric is defined based on the count of distinct transactions.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 1,040,200. This represents the demand volume as per the Total Orders Definition in BUSINESS_DEFINITIONS.\n\nRISKS / LIMITATIONS:\n- Count of distinct transactions (sale_id) represents demand volume.\n- Calculation: COUNT(DISTINCT sale_id)."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between 2021 and 2023 shows fluctuations across different months, with specific peaks and troughs noted.\n\nKEY FINDINGS:\n• In August 2021, the total revenue was $16,069,148.\n• February 2022 saw a total revenue of $14,915,790.\n• June 2022 recorded a total revenue of $16,281,973.\n• October 2022 had a total revenue of $16,154,732.\n• November 2021 reported a total revenue of $16,765,546.\n• January 2022 recorded a total revenue of $17,290,015.\n• January 2023 had a total revenue of $16,413,688.\n• December 2022 saw a total revenue of $17,160,994.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed. No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: The total transactions for a product that does not exist is zero.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) for the non-existent product is 0.\n• OBSERVED_FILTERS specifies \"Product_Name\" = 'non_existent_value'.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- All sales are assumed valid unless explicitly flagged."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: The total units sold varied between January and December 2023, with specific monthly figures provided.\n\nKEY FINDINGS:\n• In January 2023, the total quantity sold was 99528.\n• In April 2023, the total quantity sold was 97489.\n• In July 2023, the total quantity sold was 99511.\n• In October 2023, the total quantity sold was 99792.\n• In December 2023, the total quantity sold was 99631.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated.\n- Revenue aggregated by month is calculated as SUM(revenue) GROUP BY sale_year_month, used for trend analysis."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: The top categories by number of unique transactions are CAT-10, CAT-4, and CAT-2. These metrics represent the demand volume for each category.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a metric value of 163849.\n• Category_ID CAT-4 has a metric value of 151636.\n• Category_ID CAT-2 has a metric value of 128731.\n• Category_ID CAT-3 has a metric value of 117142.\n• Category_ID CAT-7 has a metric value of 116812.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- The metric is the count of distinct transactions, representing demand volume."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: The data provided shows the total units sold for various stores across different months. Each entry represents the final calculated totals for monthly unit sales per store.\n\nKEY FINDINGS:\n• Store ST-20 had a total of 1420 units sold in July 2021.\n• Store ST-27 had a total of 1297 units sold in February 2021.\n• Store ST-52 had a total of 1415 units sold in July 2020.\n• Store ST-21 had a total of 1356 units sold in November 2023.\n• Store ST-75 had a total of 1385 units sold in July 2023.\n• Store ST-24 had a total of 1194 units sold in January 2023.\n• Store ST-55 had a total of 1441 units sold in January 2021.\n• Store ST-41 had a total of 1100 units sold in June 2024.\n• Store ST-9 had a total of 1175 units sold in December 2020.\n• Store ST-26 had a total of 1417 units sold in January 2022.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: The total number of transactions in the year 2021 is provided.\n\nKEY FINDINGS:\n• Total transactions in 2021 are 213,275. (Based on OBSERVED_FILTERS: \"sale_year_month\" LIKE '%2021%')\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: The Average Order Value (AOV) is defined as the average revenue per order. No quantitative data was found for calculation or analysis.\n\nKEY FINDINGS:\n• STATUS: NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order.\n- Revenue Computation Rules Revenue is computed at the row level using the formula Revenue = Price * Quantity."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: The total orders metric is defined based on the count of distinct transactions.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 1,040,200. This represents the demand volume as per the Total Orders Definition in BUSINESS_DEFINITIONS.\n\nRISKS / LIMITATIONS:\n- Count of distinct transactions (sale_id) represents demand volume.\n- Calculation: COUNT(DISTINCT sale_id)."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: The provided dataset and analytical boundaries prohibit certain types of analyses. No quantitative data is found in the observed filters.\n\nKEY FINDINGS:\n• Customer churn, CLV, profitability, and marketing attribution are explicitly prohibited due to missing inputs.\n• Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data.\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: The observed data does not contain quantitative information necessary for computing churn. No specific filters were applied.\n\nKEY FINDINGS:\n• STATUS: NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography.\n- Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and December 2023 shows fluctuations with specific monthly totals provided.\n\nKEY FINDINGS:\n• In January 2023, the total revenue was $16,413,688.\n• In December 2022, the total revenue was $17,160,994.\n• In November 2021, the total revenue was $16,765,546.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: The total transactions for a product that does not exist is zero.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) for the non-existent product is 0.\n• OBSERVED_FILTERS specifies \"Product_Name\" = 'non_existent_value'.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- All sales are assumed valid unless explicitly flagged."
+  },
+  {
+    "question": "Calculate the total number of unique orders across the entire dataset",
+    "response": "EXECUTIVE SUMMARY: The total number of unique orders across the entire dataset is provided as a final calculated metric.\n\nKEY FINDINGS:\n• Aggregated_Fact 1 represents the total number of unique orders, which is 1040200. (Based on Total Orders Definition in BUSINESS_DEFINITIONS)\n\nRISKS / LIMITATIONS:\n- Missing values, duplicates, or anomalies must be surfaced.\n- Each unique sale_id represents exactly one order."
+  },
+  {
+    "question": "According to the business rules, how is Revenue calculated at the row level?",
+    "response": "EXECUTIVE SUMMARY: According to the business rules, Revenue is calculated at the row level using a predefined formula. No quantitative data was found for further analysis.\n\nKEY FINDINGS:\n• The revenue column present in the dataset is treated as authoritative and pre-computed.\n• Negative revenue values are treated as data-quality violations.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity.\n- No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present."
+  },
+  {
+    "question": "Show the monthly sales volume (Total Orders) for the year 2023",
+    "response": "EXECUTIVE SUMMARY: The monthly sales volume for the year 2023 varies across different months, with specific values provided.\n\nKEY FINDINGS:\n• Monthly sales volume in January 2023 is 18006.\n• Monthly sales volume in October 2023 is 18177.\n• Monthly sales volume in May 2023 is 18049.\n• Monthly sales volume in August 2023 is 18093.\n• Monthly sales volume in April 2023 is 17654.\n• Monthly sales volume in June 2023 is 17529.\n• Monthly sales volume in December 2023 is 18076.\n• Monthly sales volume in November 2023 is 17794.\n• Monthly sales volume in February 2023 is 16205.\n• Monthly sales volume in March 2023 is 18165.\n\nRISKS / LIMITATIONS:\n- Count of distinct transactions represents demand volume."
+  },
+  {
+    "question": "Rank the top 5 product categories based on the number of unique transactions.",
+    "response": "EXECUTIVE SUMMARY: The top 5 product categories based on the number of unique transactions are CAT-10, CAT-4, CAT-2, CAT-3, and CAT-7.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a metric value of 163849.\n• Category_ID CAT-4 has a metric value of 151636.\n• Category_ID CAT-2 has a metric value of 128731.\n• Category_ID CAT-3 has a metric value of 117142.\n• Category_ID CAT-7 has a metric value of 116812.\n\nRISKS / LIMITATIONS:\n- Orders cannot be assumed to represent unique customers. No repeat-purchase or customer behavior assumptions are allowed.\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "Break down the total volume of products sold for each store on a monthly basis.",
+    "response": "EXECUTIVE SUMMARY: The total volume of products sold for each store on a monthly basis is provided, showing variations across different months and stores.\n\nKEY FINDINGS:\n• In December 2022, the store with ID ST-26 had a total of 1290 units sold.\n• In June 2022, the store with ID ST-28 had a total of 1421 units sold.\n• In May 2022, the store with ID ST-42 had a total of 1303 units sold.\n• In July 2021, the store with ID ST-55 had a total of 1279 units sold.\n• In January 2021, the store with ID ST-20 had a total of 1325 units sold.\n• In August 2022, the store with ID ST-33 had a total of 1274 units sold.\n• In April 2022, the store with ID ST-41 had a total of 1387 units sold.\n• In February 2023, the store with ID ST-12 had a total of 1209 units sold.\n• In July 2022, the store with ID ST-14 had a total of 1322 units sold.\n• In December 2023, the store with ID ST-70 had a total of 1390 units sold.\n\nRISKS / LIMITATIONS:\n- Volume of products sold helps identify product movement patterns. Calculation: SUM(quantity).\n- Orders aggregated by month separates demand from pricing effects. Calculation: COUNT(DISTINCT sale_id) GROUP BY sale_year_month."
+  },
+  {
+    "question": "For the HomePod mini, what was the total units sold in 2021?",
+    "response": "EXECUTIVE SUMMARY: The total units sold for the HomePod mini in 2021 is provided based on the aggregated data available.\n\nKEY FINDINGS:\n• For the sale_year_month of 2021-08, the total_units_sold was 99274.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- All sales are assumed valid unless explicitly flagged."
+  },
+  {
+    "question": "What is the revenue trend for products in Category CAT-3 from 2021 to 2023?",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for products in Category CAT-3 shows fluctuations over the period from January 2021 to December 2023, with specific monthly revenues provided.\n\nKEY FINDINGS:\n• In January 2023, the total revenue was $16,413,688.\n• In December 2022, the total revenue was $17,160,994.\n• In November 2021, the total revenue was $16,765,546.\n• In January 2022, the total revenue was $17,290,015.\n• In May 2022, the total revenue was $16,788,558.\n• In March 2021, the total revenue was $17,198,077.\n• In August 2022, the total revenue was $16,982,126.\n• In October 2023, the total revenue was $17,366,753.\n• In December 2021, the total revenue was $15,563,213.\n• In August 2021, the total revenue was $16,069,148.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "Can we compute the customer churn rate for the year 2023?",
+    "response": "EXECUTIVE SUMMARY:\nValidation Error: Hallucination detected.\n\nKEY FINDINGS:\n• Number extracted but no quantitative data was provided.\n\nRISKS / LIMITATIONS:\n- Grounding violation."
+  },
+  {
+    "question": "Which store has the highest Average Order Value (AOV) but the lowest total units sold?",
+    "response": "EXECUTIVE SUMMARY: The store with the highest Average Order Value (AOV) is ST-57, but there is no information provided about total units sold for any stores.\n\nKEY FINDINGS:\n• Store ID ST-57 has an AOV of 6025.6533826945415.\n• No data on total units sold or comparison to other stores is available in the observed data.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order, and orders cannot be assumed to represent unique customers.\n- The AOV calculation is sensitive to pricing and product mix."
+  },
+  {
+    "question": "Total transactions for the iPhone 16 Pro (a product not in this 2024-cutoff dataset).",
+    "response": "EXECUTIVE SUMMARY: The total transactions for the iPhone 16 Pro are reported as zero according to the provided dataset.\n\nKEY FINDINGS:\n• The total_transactions for the iPhone 16 Pro is 0.\n\nRISKS / LIMITATIONS:\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data.\n- Customer churn, CLV, and other analytical boundaries are explicitly prohibited due to missing inputs."
+  },
+  {
+    "question": "what is the total revenue of macbook pro?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for the product 'Macbook Pro' is not provided in the observed data.\nKEY FINDINGS:\n• Aggregated_Fact 1 states that the total_revenue is None for the filter \"Product_Name\" = 'Macbook Pro'.\nRISKS / LIMITATIONS:\n- Revenue values are treated as authoritative and pre-computed, with negative revenue considered a data-quality violation."
+  },
+  {
+    "question": "total revenue of macbook pro ?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for the product 'Macbook Pro' is not provided in the observed data.\nKEY FINDINGS:\n• Aggregated_Fact 1 indicates that the total_revenue for 'Macbook Pro' is None.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "total revenue of macbook pro ?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for the product 'Macbook Pro' is not provided in the observed data.\nKEY FINDINGS:\n• Aggregated_Fact 1 indicates that the total_revenue for 'Macbook Pro' is None.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "total revenue of macbook pro ?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for products containing \"Macbook Pro\" in their name is not available in the provided data.\nKEY FINDINGS:\n• Aggregated_Fact 1 states that the total_revenue is None for products matching the filter Product_Name LIKE '%Macbook Pro%'.\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity, but no discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "total revenue of macbook pro ?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for products containing \"Macbook Pro\" in their name is not available in the provided data.\nKEY FINDINGS:\n• Aggregated_Fact 1 states that the total_revenue is None for products matching the filter Product_Name LIKE '%Macbook Pro%'.\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity, but no discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "total revenue of macbook pro ?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for products containing \"Macbook Pro\" in their name is not provided in the observed data.\n\nKEY FINDINGS:\n• Aggregated_Fact 1 states that the sum(revenue) is None for products with names like '%Macbook Pro%'.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity, but this does not apply to interpreting the absence of data.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "total revenu for macbook pro?",
+    "response": "EXECUTIVE SUMMARY: The requested total revenue for the MacBook Pro cannot be provided as no quantitative data is found in the observed dataset.\nKEY FINDINGS:\n• STATUS: NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted."
+  },
+  {
+    "question": "total revenue of mackbook pro?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for products containing \"mackbook pro\" in their name is None.\nKEY FINDINGS:\n• Aggregated_Fact 1: the sum(revenue) is None.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed. No discounts, refunds, taxes, promotions, or cost adjustments are assumed unless explicitly present.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "what is the total revenue of macbook pro",
+    "response": "EXECUTIVE SUMMARY: The total revenue for products containing \"Macbook Pro\" in their name is provided.\n\nKEY FINDINGS:\n• The sum of the revenue for products with names including \"Macbook Pro\" is $295,455,950. \n\nRISKS / LIMITATIONS:\n- Revenue values are treated as authoritative and pre-computed.\n- Negative revenue values are considered data-quality violations."
+  },
+  {
+    "question": "total revenue of iphones?",
+    "response": "EXECUTIVE SUMMARY: The total revenue generated by products containing \"iPhone\" in their name is provided.\n\nKEY FINDINGS:\n• The sum of revenue for iPhone-related products is $1,000,195,496. \n\nRISKS / LIMITATIONS:\n- Total Revenue Definition: Gross sales value across all transactions. Calculation: SUM(revenue). Used to measure business scale, not profitability.\n- Category-Level Revenue Definition: Revenue aggregated by product category. Calculation: SUM(revenue) GROUP BY Category_ID. Identifies category dependency."
+  },
+  {
+    "question": "Sales trend between Jan and Dec of 2023",
+    "response": "EXECUTIVE SUMMARY: The sales trend between January and December of 2023 shows fluctuations in monthly revenue. Revenue peaked in August at $107,067,689 and was lowest in February at $96,727,350.\n\nKEY FINDINGS:\n• In January 2023, the total revenue was $106,812,688.\n• In February 2023, the total revenue was $96,727,350.\n• In March 2023, the total revenue was $106,752,944.\n• In April 2023, the total revenue was $104,489,459.\n• In May 2023, the total revenue was $106,187,826.\n• In June 2023, the total revenue was $103,648,355.\n• In July 2023, the total revenue was $106,970,893.\n• In August 2023, the total revenue was $107,067,689.\n• In September 2023, the total revenue was $104,250,624.\n• In October 2023, the total revenue was $107,562,835.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated.\n- Revenue aggregated by month is calculated as SUM(revenue) GROUP BY sale_year_month. Used for trend analysis."
+  },
+  {
+    "question": "Top 5 categories by number of unique transactions",
+    "response": "EXECUTIVE SUMMARY: The top five categories by number of unique transactions are CAT-10, CAT-4, CAT-2, CAT-3, and CAT-7.\n\nKEY FINDINGS:\n• Category_ID CAT-10 has a category_sales_count of 163849.\n• Category_ID CAT-4 has a category_sales_count of 151636.\n• Category_ID CAT-2 has a category_sales_count of 128731.\n• Category_ID CAT-3 has a category_sales_count of 117142.\n• Category_ID CAT-7 has a category_sales_count of 116812.\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order. Orders cannot be assumed to represent unique customers.\n- No repeat-purchase or customer behavior assumptions are allowed."
+  },
+  {
+    "question": "Monthly units sold per store",
+    "response": "EXECUTIVE SUMMARY: The data shows the total units sold for various stores across different months. Each entry represents the final calculated totals for each store and month.\n\nKEY FINDINGS:\n• Store ST-65 had a total of 1,171 units sold in December 2023.\n• Store ST-51 had a total of 1,390 units sold in August 2024.\n• Store ST-44 had a total of 1,323 units sold in April 2023.\n• Store ST-36 had a total of 1,348 units sold in October 2023.\n• Store ST-18 had a total of 1,336 units sold in January 2021.\n• Store ST-7 had a total of 1,393 units sold in December 2023.\n• Store ST-24 had a total of 1,384 units sold in March 2021.\n• Store ST-27 had a total of 1,172 units sold in January 2020.\n• Store ST-5 had a total of 1,377 units sold in December 2022.\n• Store ST-64 had a total of 1,379 units sold in May 2022.\n\nRISKS / LIMITATIONS:\n- Temporal analysis is conducted at the monthly level using sale_year_month derived from sale_date. Partial months may exist and must not be normalized or extrapolated."
+  },
+  {
+    "question": "Total transactions in 2021",
+    "response": "EXECUTIVE SUMMARY: The total number of transactions in 2021 is provided.\n\nKEY FINDINGS:\n• Total transactions in 2021 are 213,275. (Count of distinct sale_id represents demand volume as per the definition.)\n\nRISKS / LIMITATIONS:\n- Each unique sale_id represents exactly one order.\n- Orders cannot be assumed to represent unique customers."
+  },
+  {
+    "question": "How is AOV calculated?",
+    "response": "EXECUTIVE SUMMARY: The Average Order Value (AOV) is defined as the average revenue per order. No quantitative data was found for calculation or analysis.\n\nKEY FINDINGS:\n• STATUS: NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Average Order Value (AOV) Definition: Average revenue per order.\n- Revenue Computation Rules Revenue is computed at the row level using the formula Revenue = Price * Quantity."
+  },
+  {
+    "question": "Define total orders",
+    "response": "EXECUTIVE SUMMARY: The total orders metric is defined based on the count of distinct transactions.\n\nKEY FINDINGS:\n• The count(DISTINCT sale_id) is 1,040,200. This represents the demand volume as per the Total Orders Definition in BUSINESS_DEFINITIONS.\n\nRISKS / LIMITATIONS:\n- Count of distinct transactions (sale_id) represents demand volume.\n- Calculation: COUNT(DISTINCT sale_id)."
+  },
+  {
+    "question": "What are the prohibited analyses?",
+    "response": "EXECUTIVE SUMMARY: The provided dataset and analytical boundaries prohibit certain types of analyses. No quantitative data is found in the observed filters.\n\nKEY FINDINGS:\n• Customer churn, CLV, profitability, and marketing attribution are explicitly prohibited due to missing inputs.\n• Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data.\n\nRISKS / LIMITATIONS:\n- This analytical system operates strictly within the boundaries of the provided Sales_enriched.csv dataset. No external datasets, benchmarks, market assumptions, inflation adjustments, or inferred customer behavior are permitted.\n- Metrics must not be used to infer customer behavior, marketing ROI, or profitability without supporting data."
+  },
+  {
+    "question": "Can we compute churn?",
+    "response": "EXECUTIVE SUMMARY: The observed data does not contain quantitative information necessary for computing churn. No specific filters were applied.\n\nKEY FINDINGS:\n• STATUS: NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Stores are identified by store_id with no assumed hierarchy or geography.\n- Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and September 2021 shows fluctuations with the highest monthly revenue in January 2021.\n\nKEY FINDINGS:\n• For the month of January 2021, the monthly_revenue is 17211472.\n• For February 2021, the monthly_revenue is 14665748.\n• For March 2021, the monthly_revenue is 17198077.\n• For April 2021, the monthly_revenue is 17169114.\n• For May 2021, the monthly_revenue is 16600403.\n• For June 2021, the monthly_revenue is 16333394.\n• For July 2021, the monthly_revenue is 16572395.\n• For August 2021, the monthly_revenue is 16069148.\n• For September 2021, the monthly_revenue is 15892520.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "Total transactions for a product that doesn't exist",
+    "response": "EXECUTIVE SUMMARY: The total number of transactions for products that do not exist is zero, as indicated by the observed data.\n\nKEY FINDINGS:\n• Aggregated_Fact 1 states that the total_sales_without_product_id is 0.\nRISKS / LIMITATIONS:\n- Orders are counted based on distinct sale_id without assuming unique customers or repeat purchases."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and October 2021 shows fluctuating monthly revenues. Additional data points are required to provide a complete trend analysis up to December 2023.\n\nKEY FINDINGS:\n• For the month of 2021-01, the sum(revenue) is 17211472.\n• For the month of 2021-02, the sum(revenue) is 14665748.\n• For the month of 2021-03, the sum(revenue) is 17198077.\n• For the month of 2021-04, the sum(revenue) is 17169114.\n• For the month of 2021-05, the sum(revenue) is 16600403.\n• For the month of 2021-06, the sum(revenue) is 16333394.\n• For the month of 2021-07, the sum(revenue) is 16572395.\n• For the month of 2021-08, the sum(revenue) is 16069148.\n• For the month of 2021-09, the sum(revenue) is 15892520.\n• For the month of 2021-10, the sum(revenue) is 15693495.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency. \n- Monthly revenue definition is used for trend analysis."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and October 2021 shows fluctuating monthly revenues. Specific figures are provided only up to October 2021.\n\nKEY FINDINGS:\n• For the month of 2021-01, the sum(revenue) is 17211472.\n• For the month of 2021-02, the sum(revenue) is 14665748.\n• For the month of 2021-03, the sum(revenue) is 17198077.\n• For the month of 2021-04, the sum(revenue) is 17169114.\n• For the month of 2021-05, the sum(revenue) is 16600403.\n• For the month of 2021-06, the sum(revenue) is 16333394.\n• For the month of 2021-07, the sum(revenue) is 16572395.\n• For the month of 2021-08, the sum(revenue) is 16069148.\n• For the month of 2021-09, the sum(revenue) is 15892520.\n• For the month of 2021-10, the sum(revenue) is 15693495.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and October 2021 shows fluctuations with the highest recorded sum of revenue in January 2021 at $17,211,472.\n\nKEY FINDINGS:\n• The sale_year_month is 2021-01, the sum(revenue) is 17211472.\n• The sale_year_month is 2021-02, the sum(revenue) is 14665748.\n• The sale_year_month is 2021-03, the sum(revenue) is 17198077.\n• The sale_year_month is 2021-04, the sum(revenue) is 17169114.\n• The sale_year_month is 2021-05, the sum(revenue) is 16600403.\n• The sale_year_month is 2021-06, the sum(revenue) is 16333394.\n• The sale_year_month is 2021-07, the sum(revenue) is 16572395.\n• The sale_year_month is 2021-08, the sum(revenue) is 16069148.\n• The sale_year_month is 2021-09, the sum(revenue) is 15892520.\n• The sale_year_month is 2021-10, the sum(revenue) is 15693495.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and October 2021 shows fluctuations with no clear upward or downward pattern. Only the first ten months of data are shown, with additional rows not displayed here.\n\nKEY FINDINGS:\n• For the sale_year_month of 2021-01, the sum(revenue) is 17211472.\n• For the sale_year_month of 2021-02, the sum(revenue) is 14665748.\n• For the sale_year_month of 2021-03, the sum(revenue) is 17198077.\n• For the sale_year_month of 2021-04, the sum(revenue) is 17169114.\n• For the sale_year_month of 2021-05, the sum(revenue) is 16600403.\n• For the sale_year_month of 2021-06, the sum(revenue) is 16333394.\n• For the sale_year_month of 2021-07, the sum(revenue) is 16572395.\n• For the sale_year_month of 2021-08, the sum(revenue) is 16069148.\n• For the sale_year_month of 2021-09, the sum(revenue) is 15892520.\n• For the sale_year_month of 2021-10, the sum(revenue) is 15693495.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency. \n- Monthly revenue definition is used for trend analysis."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and October 2021 is shown, with only a subset of rows presented.\n\nKEY FINDINGS:\n• For the sale_year_month of 2021-01, the sum(revenue) is 17211472.\n• For the sale_year_month of 2021-02, the sum(revenue) is 14665748.\n• For the sale_year_month of 2021-03, the sum(revenue) is 17198077.\n• For the sale_year_month of 2021-04, the sum(revenue) is 17169114.\n• For the sale_year_month of 2021-05, the sum(revenue) is 16600403.\n• For the sale_year_month of 2021-06, the sum(revenue) is 16333394.\n• For the sale_year_month of 2021-07, the sum(revenue) is 16572395.\n• For the sale_year_month of 2021-08, the sum(revenue) is 16069148.\n• For the sale_year_month of 2021-09, the sum(revenue) is 15892520.\n• For the sale_year_month of 2021-10, the sum(revenue) is 15693495.\n\nRISKS / LIMITATIONS:\n- Revenue aggregated by product category identifies category dependency."
+  },
+  {
+    "question": "What is the revenue trend for CAT-3 between 2021 and 2023",
+    "response": "EXECUTIVE SUMMARY: The revenue trend for CAT-3 between January 2021 and December 2023 shows fluctuations with specific months highlighted. Only a subset of rows is shown, indicating the presence of additional data not displayed here.\n\nKEY FINDINGS:\n• In January 2021, the sum(revenue) was 17,211,472.\n• In February 2021, the sum(revenue) was 14,665,748.\n• In March 2021, the sum(revenue) was 17,198,077.\n• In April 2021, the sum(revenue) was 17,169,114.\n• In May 2021, the sum(revenue) was 16,600,403.\n• In August 2023, the sum(revenue) was 17,045,942.\n• In September 2023, the sum(revenue) was 16,321,745.\n• In October 2023, the sum(revenue) was 17,366,753.\n• In November 2023, the sum(revenue) was 16,139,923.\n• In December 2023, the sum(revenue) was 16,190,525.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "what is the total revenue of iPad Pro 12.9-inch?",
+    "response": "EXECUTIVE SUMMARY: The total revenue for iPad Pro 12.9-inch products is provided.\n\nKEY FINDINGS:\n• The sum of the revenue for iPad Pro 12.9-inch products is $76,217,937.\n\nRISKS / LIMITATIONS:\n- Revenue values are treated as authoritative and pre-computed.\n- Negative revenue values are considered data-quality violations."
+  },
+  {
+    "question": "top 5 categories of prodcut by revenue?",
+    "response": "EXECUTIVE SUMMARY: The top five categories by revenue are CAT-3, CAT-10, CAT-4, CAT-2, and CAT-1.\n\nKEY FINDINGS:\n• The Category_ID CAT-3 has the highest total_revenue of 953443623.\n• The Category_ID CAT-10 follows with a total_revenue of 927115953.\n• The Category_ID CAT-4 has a total_revenue of 865147932.\n• The Category_ID CAT-2 has a total_revenue of 794980579.\n• The Category_ID CAT-1 has the lowest among these top five categories with a total_revenue of 763382551.\n\nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity. The revenue column present in the dataset is treated as authoritative and pre-computed.\n- Negative revenue values are treated as data-quality violations."
+  },
+  {
+    "question": "top 5 procucts by revenue?",
+    "response": "EXECUTIVE SUMMARY: The top five products by revenue are Apple Music, iMac 27-inch, iPad mini (5th Generation), iPad (9th Generation), and Beats Fit Pro.\n\nKEY FINDINGS:\n• The total revenue for Apple Music is $125,453,460.\n• The total revenue for iMac 27-inch is $124,006,372.\n• The total revenue for iPad mini (5th Generation) is $123,951,136.\n• The total revenue for iPad (9th Generation) is $123,950,553.\n• The total revenue for Beats Fit Pro is $118,449,990.\n\nRISKS / LIMITATIONS:\n- Total Revenue Definition: Gross sales value across all transactions. Calculation: SUM(revenue). Used to measure business scale, not profitability.\n- Category-Level Revenue Definition: Revenue aggregated by product category. Calculation: SUM(revenue) GROUP BY Category_ID. Identifies category dependency."
+  },
+  {
+    "question": "can you describe the table?",
+    "response": "EXECUTIVE SUMMARY: There is no quantitative data available for analysis at this time.\n\nKEY FINDINGS:\n• NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Missing values, duplicates, or anomalies must be surfaced. No silent corrections, imputations, or synthetic data generation are allowed.\n- Stores are identified by store_id with no assumed hierarchy or geography. Store churn refers only to activity presence, not closure or relocation."
+  },
+  {
+    "question": "can you numerically describe the table?",
+    "response": "EXECUTIVE SUMMARY: There is no quantitative data available for numerical description as per the observed data provided.\n\nKEY FINDINGS:\n• The status indicates that there is no quantitative data found in the dataset.\n  \nRISKS / LIMITATIONS:\n- Revenue is computed at the row level using the formula Revenue = Price * Quantity, but since no quantitative data is present, this computation cannot be performed here."
+  },
+  {
+    "question": "give me the mean, median and iqr for each store by revenue?",
+    "response": "EXECUTIVE SUMMARY: There is no quantitative data available to provide the mean, median, and interquartile range for each store by revenue.\n\nKEY FINDINGS:\n• NO_QUANTITATIVE_DATA_FOUND\n\nRISKS / LIMITATIONS:\n- Total Revenue Definition: Gross sales value across all transactions. Calculation: SUM(revenue). Used to measure business scale, not profitability.\n- Monthly Revenue Definition: Revenue aggregated by month. Calculation: SUM(revenue) GROUP BY sale_year_month. Used for trend analysis."
+  },
+  {
+    "question": "give me the mean, median and iqr for each store by revenue?",
+    "response": "EXECUTIVE SUMMARY: The mean, median, and interquartile range (IQR) for revenue are provided for a subset of stores.\n\nKEY FINDINGS:\n• For store_id ST-65, the mean_revenue is 5901.39, the median_revenue is 4767.0, and the iqr is 6290.0.\n• For store_id ST-10, the mean_revenue is 5930.32, the median_revenue is 4764.0, and the iqr is 6378.0.\n• For store_id ST-20, the mean_revenue is 5961.74, the median_revenue is 4821.0, and the iqr is 6378.0.\n• For store_id ST-6, the mean_revenue is 5895.44, the median_revenue is 4724.0, and the iqr is 6286.0.\n• For store_id ST-43, the mean_revenue is 5862.28, the median_revenue is 4764.0, and the iqr is 6306.0.\n• For store_id ST-24, the mean_revenue is 5939.38, the median_revenue is 4760.0, and the iqr is 6290.0.\n• For store_id ST-13, the mean_revenue is 5946.69, the median_revenue is 4767.0, and the iqr is 6271.0.\n• For store_id ST-9, the mean_revenue is 5895.77, the median_revenue is 4739.0, and the iqr is 6266.0.\n• For store_id ST-8, the mean_revenue is 5970.27, the median_revenue is 4808.0, and the iqr is 6381.0.\n• For store_id ST-53, the mean_revenue is 5916.47, the median_revenue is 4767.0, and the iqr is 6341.0.\n\nRISKS / LIMITATIONS:\n- Only a subset of rows is shown; trends may not be complete.\n- The metrics provided measure business scale but do not reflect profitability."
+  }
+]
