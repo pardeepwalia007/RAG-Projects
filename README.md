@@ -114,6 +114,18 @@ Handles user interaction (CLI / lightweight UI), acting as the system entry poin
 
 ---
 
+flowchart LR
+  UI[Streamlit UI\n(Code/ui.py)] -->|POST /query| API[FastAPI\n(Code/api.py)]
+  API -->|graph.invoke(state)| LG[LangGraph Orchestrator\n(Code/app_langgraph.py)]
+  LG --> API
+  API --> UI
+
+
+
+
+
+
+
 ## 📊 Evaluation Pipeline (`eval/`)
 
 ### `eval_questions.jsonl`
