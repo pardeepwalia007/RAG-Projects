@@ -1,6 +1,6 @@
 ## 🧠 Agentic RAG LangGraph Architecture
 
-![Agentic RAG LangGraph Flow](docs/images/agentic_rag_langgraph.png)
+![Agentic RAG LangGraph Flow](agentic_rag_langgraph.png)
 
 This diagram illustrates the **agentic control flow** of the RAG system built using **LangGraph**.
 
