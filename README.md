@@ -114,23 +114,118 @@ Handles user interaction (CLI / lightweight UI), acting as the system entry poin
 
 ---
 
-flowchart LR
-  UI[Streamlit UI\n(Code/ui.py)] -->|POST /query| API[FastAPI\n(Code/api.py)]
-  API -->|graph.invoke(state)| LG[LangGraph Orchestrator\n(Code/app_langgraph.py)]
-  LG --> API
-  API --> UI
+## Visual Representations 
+
+### 1) End-to-end request flow (UI → API → LangGraph)
 
 ```mermaid
   
 flowchart LR
-  UI[Streamlit UI\n(Code/ui.py)] -->|POST /query| API[FastAPI\n(Code/api.py)]
-  API -->|graph.invoke(state)| LG[LangGraph Orchestrator\n(Code/app_langgraph.py)]
+  UI["Streamlit UI - Code/ui.py"] -->|"POST /query"| API["FastAPI - Code/api.py"]
+  API -->|"graph.invoke(state)"| LG["LangGraph Orchestrator - Code/app_langgraph.py"]
   LG --> API
   API --> UI
 
 ```
+### 2) LangGraph core routing
+```mermaid
 
+flowchart TD
+  S["START"] --> RD["retrieve_docs"]
+  RD --> DS["decide_sql"]
 
+  DS -->|"run_sql_path"| SQL["run_sql_path"]
+  DS -->|"summarize"| SUM["summarize"]
+  DS -->|"retrieve-only"| RET["retrieve_docs"]
+
+  SQL -->|"success"| VIZ["visualize_data"]
+  SQL -->|"needs retry"| REF["reflection_node"]
+
+  REF --> DS
+  VIZ --> SUM
+  SUM --> E["END"]
+```
+### 3) Runtime build (CSV + PDFs → DuckDB + Retriever)
+``` mermaid
+flowchart TD
+  CSV["CSV files"] --> DDB["DuckDB runtime - sql_engine.py"]
+  PDF["PDF files"] --> P2M["pdf_to_markdown.py"]
+  P2M --> CH["Markdown chunks"]
+  CH --> RET["Retriever build - vectorize.py"]
+  RET --> VDB["Vector DB"]
+  DDB --> GRAPH["LangGraph run - app_langgraph.py"]
+  VDB --> GRAPH
+
+```
+
+### 4) Evaluation pipeline (questions → runs → RAGAS report)
+
+``` mermaid
+flowchart LR
+  Q["eval_questions.jsonl"] --> RUN["run_eval.py"]
+  RUN --> OUT["run_outputs - raw results"]
+  OUT --> SCORE["score_ragas.py"]
+  SCORE --> REP["reports - RAGAS metrics"]
+```
+
+## Cluster-level mini Mermaids
+
+### 5) Retrieval subsystem
+
+``` mermaid
+flowchart TD
+  PDF["PDF inputs"] --> P2M["pdf_to_markdown.py"]
+  P2M --> MD["Markdown"]
+  MD --> VEC["vectorize.py - chunk and embed"]
+  VEC --> VDB["Vector DB"]
+
+  Q["User question"] --> RET["retrieve_docs"]
+  VDB --> RET
+  RET --> DOCS["Top context chunks"]
+```
+
+### 6) Intent + routing subsystem
+``` mermaid
+flowchart LR
+  Q["User question"] --> INT["intent_llm.py - QueryInterpreter"]
+  INT --> DEC["decide_sql"]
+
+  DEC -->|"semantic"| SUM["summarize"]
+  DEC -->|"analytic"| SQL["run_sql_path"]
+  DEC -->|"blocked or rules"| RET["retrieve_docs"]
+```
+
+## 7) SQL analytics subsystem
+``` mermaid
+flowchart TD
+  Q["Question"] --> GATE["sql_orchestrator.py - should_run_sql"]
+
+  GATE -->|"yes"| GEN["llm_sql_agent.py - generate SQL"]
+  GEN --> SAN["sanitize and safety checks"]
+  SAN --> ENG["sql_engine.py - DuckDB execute"]
+  ENG --> RES["rows and aggregates"]
+
+  GATE -->|"no"| RET["retrieve_docs"]
+```
+## 8) Self-healing loop
+
+``` mermaid
+flowchart TD
+  SQL["run_sql_path"] --> OK{"SQL success"}
+  OK -->|"yes"| SUM["summarize"]
+  OK -->|"no"| REF["reflection_node - fix and retry"]
+  REF --> DEC["decide_sql"]
+  DEC --> SQL
+```
+
+## 9) Eval subsystem
+``` mermaid
+flowchart LR
+  QL["eval_questions.jsonl"] --> RUN["run_eval.py"]
+  RUN --> OUT["run_outputs - answers"]
+  OUT --> SCORE["score_ragas.py"]
+  SCORE --> REP["reports - metrics"]
+```
 
 
 ## 📊 Evaluation Pipeline (`eval/`)
