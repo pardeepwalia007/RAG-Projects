@@ -22,6 +22,7 @@ This architecture demonstrates **agentic decision-making, conditional execution,
 
 
 ## Project Strcuture and Core Components
+```text
 Code/
 ├── api.py
 ├── app_langgraph.py
@@ -39,4 +40,4 @@ Code/
 eval/
 ├── eval_questions.jsonl
 ├── run_eval.py
-├── score_ragas.py
+└── score_ragas.py
