@@ -1,0 +1,35 @@
+# --------------------
+# Secrets (NEVER COMMIT)
+# --------------------
+.env
+.env.save
+.env.*
+!.env.example
+
+# --------------------
+# Python / caches
+# --------------------
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# --------------------
+# VS Code / OS junk
+# --------------------
+.DS_Store
+
+# --------------------
+# Generated / local artifacts (your project-specific)
+# --------------------
+.deepeval/
+
+# Chroma / vector db persistence (you have BOTH locations)
+vector_db/
+Data/vector_db/
+
+# Eval outputs (generated)
+eval/reports/
+eval/run_outputs/
