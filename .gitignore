@@ -36,3 +36,5 @@ eval/run_outputs/
 
 # testing outputs
 tests
+uploads/
+tests/*.json
