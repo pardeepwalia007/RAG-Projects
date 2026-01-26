@@ -37,34 +37,81 @@ def should_run_sql(questions: str, schema: Dict[str, Any] = None) -> bool:
     # ---------------------------------------------------------
     # STATIC KEYWORDS (Foundational Logic)
     # ---------------------------------------------------------
-    
-    # 2. METRIC & ENTITY TOKENS
-    metrics = [
+    # 2. METRIC TOKENS (What are we measuring?)
+
+        metrics = [
+            # Visuals (ADD THESE)
+            "plot", "graph", "chart", "visualize", "show me", "diagram",
+            # Sales/Retail
+            "revenue", "sales", "sold", "units", "quantity", "orders", 
+            "aov", "price", "data", "earned", "bought", "transactions", 
+            "money", "cash", "income", "profit", "amount", "value",
+            # HR/Employees
+            "employees", "employee", "employe", "staff", "workers", "headcount", 
+            "salary", "salaries", "compensation", "pay",
+            "age", "tenure", "hired", "fired", "terminated", "left",
+            "name", "names", "full name", "person", "people",
+            # Healthcare (NEW)
+            "patient", "patients", "doctor", "doctors", "hospital", "hospitals",
+            "condition", "diagnosis", "blood", "insurance", "billing", "bill",
+            "medication", "medicine", "drug", "prescribed", "prescription",
+            "test", "result", "results", "room", "stay",
+            # General Data Tokens
+            "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table",
+            "cost", "costs", "shipping", "shipment", "freight", "weight", 
+            "distance", "transit", "delivery", "deliveries", "delay", "delays",
+            "money", "cash", "income", "profit", "amount", "value", "valuation",
+            "company", "companies", "business", "startup", "startups", "unicorn", "unicorns",
             # Visuals
-            "plot", "graph", "chart", "visualize", "show me", "diagram", "scatter",
-            # Data Tokens
-            "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table", "data",
-            # Business/Generic
-            "total", "sum", "average", "avg", "count", "amount", "value", "quantity", 
-            "number", "numbers", "figure", "figures", # [ADDED MISSING KEYWORDS]
-            "rate", "percentage", "ratio", "score", "level", "levels", "range"
+                "plot", "graph", "chart", "visualize", "show me", "diagram", "scatter",
+                # Data Tokens
+                "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table", "data",
+                # Business/Generic
+                "total", "sum", "average", "avg", "count", "amount", "value", "quantity", 
+                "number", "numbers", "figure", "figures", # [ADDED MISSING KEYWORDS]
+                "rate", "percentage", "ratio", "score", "level", "levels", "range"
         ]
         
-    # 3. STAT & INTENT TOKENS
-    rankings_and_stats = [
-        "most", "least", "best", "worst", "highest", "lowest", "top", "bottom",
-        "unique", "distinct", "trend", "distribution", "breakdown", "analysis", 
-        "summary", "profile", "list", "compare", "comparison", "difference", "differ",
-        "relate", "relationship", "correlation", "impact", "affect", "between",
-        "vs", "versus",
-        "change", "changed", "growth", "growing", "evolution", "vary", "varies" # [ADDED MISSING KEYWORDS]
-    ]
-    
-    # 4. DIMENSIONAL TOKENS
-    dimensions = [
-        "group", "category", "type", "status", "class", "segment", "department",
-        "date", "year", "month", "time", "period", "region", "location"
-    ]
+        # 3. STAT & INTENT TOKENS (How are we asking?)
+        rankings_and_stats = [
+            # Aggregations
+            "total", "sum", "average", "avg", "count", "number of", "how many",
+            "how much",
+            # Ranking/Sorting
+            "most", "least", "best", "worst", "highest", "lowest", "top", "bottom",
+            # Analysis & Description
+            "unique", "distinct", "trend", "spread", "distribution", "breakdown",
+            "descriptive", "describe", "description", "analysis", "analyze", 
+            "stats", "statistics", "summary", "profile",
+            # Listing
+            "list", "show", "give me", "find", "who", "which", "what is", "what are",
+            "what", "present",
+            "available", "exist", "existing", "used",
+            "most", "least", "best", "worst", "highest", "lowest", "top", "bottom",
+            "unique", "distinct", "trend", "distribution", "breakdown", "analysis", 
+            "summary", "profile", "list", "compare", "comparison", "difference", "differ",
+            "relate", "relationship", "correlation", "impact", "affect", "between",
+            "vs", "versus",
+            "change", "changed", "growth", "growing", "evolution", "vary", "varies" # [ADDED MISSING KEYWORDS]
+        ]
+        
+        # 4. DIMENSIONAL TOKENS (Grouping categories)
+        dimensions = [
+            # Retail
+            "product", "category", "store", "brand", "item", "coffee", "drink",
+            # HR
+            "department", "division", "role", "title", "position", "gender", 
+            "location", "state", "city", "manager", "supervisor",
+            "contract", "full time", "part time", "permanent", "temporary", "intern", "active",
+            # Healthcare (NEW)
+            "admission", "admitted", "discharge", "emergency", "urgent", "elective", 
+            "type", "provider", "medical",
+            # Time/General
+            "month", "year", "date", "per", "by", "daily", "monthly",
+            "time", "weekly", "quarterly", "period",
+            "category", "sector", "industry", "industries", "domain", "field", 
+            "city", "country", "continent", "region", "location","categories"
+        ]
 
     # ---------------------------------------------------------
     # MERGE & CHECK
