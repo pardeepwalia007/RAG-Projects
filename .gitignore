@@ -33,3 +33,6 @@ Data/vector_db/
 # Eval outputs (generated)
 eval/reports/
 eval/run_outputs/
+
+# testing outputs
+tests

@@ -1,107 +1,95 @@
 import re
+from typing import Dict, Any
 # Determines if a question requires SQL execution for data analysis.
-def should_run_sql(questions: str) -> bool:
-    """Decides whether to run SQL based on question intent for calculations vs. definitions."""
+def should_run_sql(questions: str, schema: Dict[str, Any] = None) -> bool:
+    """
+    Decides whether to run SQL based on question intent AND dynamic schema columns.
+    """
     q = questions.lower()
 
-    # 1. HARD BLOCKERS (Definitions/Rules)
-    # These go to the Vector DB
+    # 1. HARD BLOCKERS (Definitions/Rules) -> Vector DB
     if any(re.search(rf"\b{word}\b", q) for word in ["meaning", "definition", "formula", "prohibited", "policy"]):
         return False
 
-    # 2. METRIC & ENTITY TOKENS (What are we looking for?)
+    # ---------------------------------------------------------
+    # DYNAMIC KEYWORD EXTRACTION (The "Automatic" Part)
+    # ---------------------------------------------------------
+    dynamic_tokens = []
+    if schema:
+        # Combine Numeric and Text column strings
+        raw_cols = (
+            str(schema.get("NUMERIC COLUMNS", "")) + "," + 
+            str(schema.get("TEXT COLUMNS", ""))
+        )
+        # Clean and split: "Heart_Disease" -> ["heart", "disease", "heart disease"]
+        for col in raw_cols.split(","):
+            clean_col = col.strip().lower()
+            if not clean_col: continue
+            
+            # Add the exact column name (normalized)
+            normalized = clean_col.replace("_", " ")
+            dynamic_tokens.append(normalized)
+            
+            # Add individual words if snake_case (e.g., "cholesterol" from "serum_cholesterol")
+            if "_" in clean_col:
+                dynamic_tokens.extend(clean_col.split("_"))
+
+    # ---------------------------------------------------------
+    # STATIC KEYWORDS (Foundational Logic)
+    # ---------------------------------------------------------
+    
+    # 2. METRIC & ENTITY TOKENS
     metrics = [
-        # Visuals (ADD THESE)
-        "plot", "graph", "chart", "visualize", "show me", "diagram",
-        # Sales/Retail
-        "revenue", "sales", "sold", "units", "quantity", "orders", 
-        "aov", "price", "data", "earned", "bought", "transactions", 
-        "money", "cash", "income", "profit", "amount", "value",
-        # HR/Employees
-        "employees", "employee", "employe", "staff", "workers", "headcount", 
-        "salary", "salaries", "compensation", "pay",
-        "age", "tenure", "hired", "fired", "terminated", "left",
-        "name", "names", "full name", "person", "people",
-        # Healthcare (NEW)
-        "patient", "patients", "doctor", "doctors", "hospital", "hospitals",
-        "condition", "diagnosis", "blood", "insurance", "billing", "bill",
-        "medication", "medicine", "drug", "prescribed", "prescription",
-        "test", "result", "results", "room", "stay",
+        # Visuals
+        "plot", "graph", "chart", "visualize", "show me", "diagram", "scatter",
         # General Data Tokens
-        "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table",
-        "cost", "costs", "shipping", "shipment", "freight", "weight", 
-        "distance", "transit", "delivery", "deliveries", "delay", "delays",
-        "money", "cash", "income", "profit", "amount", "value", "valuation",
-        "company", "companies", "business", "startup", "startups", "unicorn", "unicorns"
+        "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table", "data",
+        # Business/Generic
+        "total", "sum", "average", "avg", "count", "amount", "value", "quantity",
+        "rate", "percentage", "ratio", "score", "level", "levels", "range"
     ]
     
-    # 3. STAT & INTENT TOKENS (How are we asking?)
+    # 3. STAT & INTENT TOKENS
     rankings_and_stats = [
-        # Aggregations
-        "total", "sum", "average", "avg", "count", "number of", "how many",
-        "how much",
-        # Ranking/Sorting
         "most", "least", "best", "worst", "highest", "lowest", "top", "bottom",
-        # Analysis & Description
-        "unique", "distinct", "trend", "spread", "distribution", "breakdown",
-        "descriptive", "describe", "description", "analysis", "analyze", 
-        "stats", "statistics", "summary", "profile",
-        # Listing
-        "list", "show", "give me", "find", "who", "which", "what is", "what are",
-        "what", "present",
-        "available", "exist", "existing", "used","relate", "relationship", "relation", "correlation", "correlate",
-        "impact", "affect", "effect", "influence", "depend", "dependency",
-        "increase", "decrease", "higher", "lower", "vs", "versus", "compare"
+        "unique", "distinct", "trend", "distribution", "breakdown", "analysis", 
+        "summary", "profile", "list", "compare", "comparison", "difference", "differ",
+        "relate", "relationship", "correlation", "impact", "affect", "between",
+        "vs", "versus"
     ]
     
-    # 4. DIMENSIONAL TOKENS (Grouping categories)
+    # 4. DIMENSIONAL TOKENS
     dimensions = [
-        # Retail
-        "product", "category", "store", "brand", "item", "coffee", "drink",
-        # HR
-        "department", "division", "role", "title", "position", "gender", 
-        "location", "state", "city", "manager", "supervisor",
-        "contract", "full time", "part time", "permanent", "temporary", "intern", "active",
-        # Healthcare (NEW)
-        "admission", "admitted", "discharge", "emergency", "urgent", "elective", 
-        "type", "provider", "medical",
-        # Time/General
-        "month", "year", "date", "per", "by", "daily", "monthly",
-        "time", "weekly", "quarterly", "period",
-        "category", "sector", "industry", "industries", "domain", "field", 
-        "city", "country", "continent", "region", "location","categories"
+        "group", "category", "type", "status", "class", "segment", "department",
+        "date", "year", "month", "time", "period", "region", "location"
     ]
+
+    # ---------------------------------------------------------
+    # MERGE & CHECK
+    # ---------------------------------------------------------
+
+    # [CRITICAL] Add dynamic schema tokens to the search list
+    # If the user asks about "Cholesterol" and it's in the CSV, we catch it here.
+    combined_vocab = set(metrics + dimensions + dynamic_tokens)
 
     # LOGIC CHECK
-    has_metric = any(m in q for m in metrics)
+    has_vocab_match = any(token in q for token in combined_vocab)
     has_rank_stat = any(s in q for s in rankings_and_stats)
-    has_dim = any(d in q for d in dimensions)
-    has_year = bool(re.search(r'\b(20|19)\d{2}\b', q))
-
-    # TRIGGER RULES
     
-    # Rule A: "Describe numeric columns" (Stat + Metric)
-    if has_rank_stat and has_metric:
+    # Rule A: The question mentions a known column/metric AND a statistical intent
+    # e.g., "How does [age] [differ]..."
+    if has_vocab_match and has_rank_stat:
         return True
 
-    # Rule B: "Average salary by department" (Stat + Dimension)
-    if has_rank_stat and has_dim:
-        return True
-    
-    # Rule C: "Sales in 2024" (Metric + Context)
-    if has_metric and (has_year or has_dim):
+    # Rule B: Direct "Show me" or "Plot" intent with any column
+    if any(v in q for v in ["plot", "graph", "chart", "list", "show", "what is", "what are"]) and has_vocab_match:
         return True
 
-    # Rule D: Direct "Identity" lookup
-    if "who" in q and ("left" in q or "quit" in q or "fired" in q):
-        return True
-        
-    # Rule E: Explicit "Describe/Profile" Intent
-    if "describe" in q or "descriptive" in q or "profile" in q:
+    # Rule C: Comparison logic ("between patients")
+    if "between" in q and has_vocab_match:
         return True
 
     return False
-
 # Validates SQL queries for safety and correctness.
 def validate_sql(sql_query: str, table_name: str) :
     """Ensures SQL queries are safe SELECT statements referencing the correct table."""

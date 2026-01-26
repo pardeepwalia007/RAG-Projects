@@ -75,6 +75,8 @@ def decide_sql(state: AppState) -> AppState:
     """Generalized decision node that uses dynamic schema and error feedback."""
     q = state["question"]
     hint = ""
+    # Get the current schema from the state
+    current_schema = state.get("type_schema", {})
     print("\n [Langraph] Node: decide_sql")
     # If we are in a retry loop, we generate a dynamic reflection hint
     if state.get("retry_count", 0) > 0:
@@ -89,8 +91,8 @@ def decide_sql(state: AppState) -> AppState:
             f"3. RE-PLAN your query based ONLY on the columns listed above and the rules in the docs."
         )
 
-    # Use the combined text to decide if we should proceed
-    run_sql = should_run_sql(q + hint) 
+    # Decide whether to run SQL based on the question, schema, and any reflection hint
+    run_sql = should_run_sql(q + hint, schema=current_schema)
 
     return {
         "run_sql": run_sql,

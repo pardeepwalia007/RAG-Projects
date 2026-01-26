@@ -158,7 +158,9 @@ class QueryInterpreter:
         # if not m: raise ValueError("Metric is empty.") below is changed to
         if not m:
             return None
-
+        # if it's an aggregate function, validate inner columns
+        if any(x in m.upper() for x in ["COUNT", "SUM", "AVG", "MAX", "MIN"]):
+            return m
         # If complex aggregate (SUM, COUNT), validate inner columns
         if "(" in m:
             quoted = _extract_quoted_identifiers(m)
@@ -376,12 +378,23 @@ class QueryInterpreter:
 
         3. ENTITY SELECTION: Return a LIST of columns to group by.
 
-        4. FILTERING LOGIC (Critical):
-        - TEXT COLUMNS: If the user search term (e.g. "Macbook") is a SUBSTRING of real values, specify "using partial match".
-        - DATE/TIME COLUMNS (STRICT): 
-            - NEVER suggest "partial match" for dates.
-            - If the user mentions a year (e.g. '2023'), extract '2023' as the filter_value.
-            - The instruction should be: "Filter by Year 2023 using native date functions."
+        4. 
+         REFINED INSTRUCTION (THE MOST IMPORTANT PART):
+           - You must rewrite the user's question into "SQL-Speak".
+           - **SIMPLIFY**: Break down complex questions.
+           - **ENUMERATE (CRITICAL)**: If the user asks for "attributes", "factors", "drivers", "features", or "all columns", YOU MUST SELECT 3-5 RELEVANT COLUMNS from the provided schema.
+             - Bad: "Analyze all attributes." (SQL Agent cannot handle vague requests)
+             - Good: "Group by [Category_Column] and calculate averages for [Metric_A], [Metric_B], and [Metric_C]."
+             - COMPARE: If comparing groups, REMOVE 'LIMIT 1'. You need all groups to compare.
+             - Bad: "Find the most frequent..." (Triggers LIMIT 1 which hides data)
+             - Good: "Group by [Category_Column] and count records to compare distribution across all groups."
+         FILTERING LOGIC (Critical):
+           - **FILTER**: If the user implies a filter, include specific conditions (e.g. "Filter where Status = 'Active'").
+            - TEXT COLUMNS: If the user search term (e.g. "Macbook") is a SUBSTRING of real values, specify "using partial match".
+            - DATE/TIME COLUMNS (STRICT): 
+                - NEVER suggest "partial match" for dates.
+                - If the user mentions a year (e.g. '2023'), extract '2023' as the filter_value.
+                - The instruction should be: "Filter by Year 2023 using native date functions."
 
         5. DO NOT answer the user. ONLY return JSON that matches the QuerySpec schema exactly. No extra keys.
         {format_instructions}
