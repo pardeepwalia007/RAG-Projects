@@ -204,6 +204,11 @@ def enforce_safety_limits(
     if requested_limit:
         limit = min(requested_limit, max_limit)
     
+    # [CRITICAL FIX] If intent is Trending/Distribution, NEVER default to 1.
+    # We need high volume data for charts, even if the user says "Most".
+    elif intent in ["relationship", "distribution", "visualization"]:
+        limit = max_limit
+        
     # [FIX] If "ranking" intent, ONLY default to 1 if user didn't ask for "all"
     elif intent == "ranking":
         if wants_all:
