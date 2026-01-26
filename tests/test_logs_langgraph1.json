@@ -2290,5 +2290,13 @@
   {
     "question": "Which basic clinical features appear more often in patients who have heart disease compared to those who don’t?",
     "response": "**EXECUTIVE SUMMARY**\n\nThe bar chart of 'count_star()' by 'Heart Disease' shows the following distribution:\n\n| Heart Disease | count_star() |\n|---------------|--------------|\n| Absence       | 150          |\n| Presence      | 120          |\n\n* **Entity**: Bar chart of 'count_star()' by 'Heart Disease'\n* **Metric**: /150 to /120\n* **Method**: Bar chart of 'count_star()' by 'Heart Disease'.\n* **Notes**: See chart for detailed distribution.\n\n**RISKS / LIMITATIONS**\n- This dataset supports questions such as: How do exercise-related indicators differ between patients with and without heart disease? Which clinical features tend to co-occur more frequently in heart disease cases? Are there distinct exercise-response patterns associated with heart disease outcomes? These questions require multi-feature reasoning rather than single-column lookup.\n- The primary objective is to analyze relationships between clinical indicators and heart disease outcomes, with a focus on: Understanding how exercise-related features behave across outcome groups; Identifying patterns, distributions, and co-occurring features; Supporting binary classification and risk-pattern exploration. This dataset is not intended to establish clinical causality, but rather to support data-driven pattern analysis."
+  },
+  {
+    "question": "Which industries have the highest number of unicorn companies, and how do their average valuations compare?",
+    "response": "**EXECUTIVE SUMMARY**\n\n* **Entity**: Fintech Industry\n* **Metric**: 224 unicorn companies\n* **Method**: Aggregation with no observed filters\n* **Notes**: Aggregation is calculated over all matching records.\n\n**RISKS / LIMITATIONS**\n- Data Quality Alert: Numeric type conversion (TRY_CAST) was applied on: Valuation. Results may exclude non-numeric values; clean the source data to avoid misleading analysis."
+  },
+  {
+    "question": "How has the number of new unicorn companies changed over time by year of founding?",
+    "response": "I could not find specific data matching that request. You may try rephrasing your question or checking the data source for relevant information."
   }
 ]

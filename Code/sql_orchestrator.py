@@ -40,22 +40,24 @@ def should_run_sql(questions: str, schema: Dict[str, Any] = None) -> bool:
     
     # 2. METRIC & ENTITY TOKENS
     metrics = [
-        # Visuals
-        "plot", "graph", "chart", "visualize", "show me", "diagram", "scatter",
-        # General Data Tokens
-        "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table", "data",
-        # Business/Generic
-        "total", "sum", "average", "avg", "count", "amount", "value", "quantity",
-        "rate", "percentage", "ratio", "score", "level", "levels", "range"
-    ]
-    
+            # Visuals
+            "plot", "graph", "chart", "visualize", "show me", "diagram", "scatter",
+            # Data Tokens
+            "numeric", "numerical", "columns", "column", "records", "rows", "dataset", "table", "data",
+            # Business/Generic
+            "total", "sum", "average", "avg", "count", "amount", "value", "quantity", 
+            "number", "numbers", "figure", "figures", # [ADDED MISSING KEYWORDS]
+            "rate", "percentage", "ratio", "score", "level", "levels", "range"
+        ]
+        
     # 3. STAT & INTENT TOKENS
     rankings_and_stats = [
         "most", "least", "best", "worst", "highest", "lowest", "top", "bottom",
         "unique", "distinct", "trend", "distribution", "breakdown", "analysis", 
         "summary", "profile", "list", "compare", "comparison", "difference", "differ",
         "relate", "relationship", "correlation", "impact", "affect", "between",
-        "vs", "versus"
+        "vs", "versus",
+        "change", "changed", "growth", "growing", "evolution", "vary", "varies" # [ADDED MISSING KEYWORDS]
     ]
     
     # 4. DIMENSIONAL TOKENS
