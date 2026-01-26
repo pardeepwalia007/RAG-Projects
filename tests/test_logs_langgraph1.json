@@ -2298,5 +2298,29 @@
   {
     "question": "How has the number of new unicorn companies changed over time by year of founding?",
     "response": "I could not find specific data matching that request. You may try rephrasing your question or checking the data source for relevant information."
+  },
+  {
+    "question": "How has the number of new unicorn companies changed over time by year of founding?",
+    "response": "I could not find specific data matching that request. You may try rephrasing your question or checking the data source for relevant information."
+  },
+  {
+    "question": "How has the number of new unicorn companies changed over time by year of founding?",
+    "response": "**EXECUTIVE SUMMARY**\n\n* **Entity**: Number of New Unicorn Companies Over Time\n* **Metric**: 1 to 155\n* **Method**: Line chart of 'count_star()' over 'Year Founded'.\n* **Notes**: See chart for detailed distribution.\n\nThe number of new unicorn companies has varied from year to year, with the earliest recorded founding year being 1919 and the latest in 2021. The count ranges from a single company founded in several early years (e.g., 1919, 1979) up to a peak of 155 companies founded in 2015.\n\n**RISKS / LIMITATIONS**\n- No specific business risks identified."
+  },
+  {
+    "question": "How do unicorn company valuations differ by continent or country?",
+    "response": "**EXECUTIVE SUMMARY**\n\n* **Entity**: Average Valuation by Continent\n* **Metric**: Bar chart of 'average_valuation' by 'Continent'\n* **Method**: Bar chart of 'average_valuation' by 'Continent'.\n* **Notes**: See chart for detailed distribution.\n\n### RISKS / LIMITATIONS\n\n- Data Quality Alert: Numeric type conversion (TRY_CAST) was applied on: Valuation. Results may exclude non-numeric values; clean the source data to avoid misleading analysis."
+  },
+  {
+    "question": "How do unicorn company valuations differ by country?",
+    "response": "**EXECUTIVE SUMMARY**\n\n* **Entity**: Average Valuation by Country\n* **Metric**: /\\$1.00 to /\\$32.00\n* **Method**: Bar chart of 'average_valuation' by 'Country'.\n* **Notes**: See chart for detailed distribution.\n\n**RISKS / LIMITATIONS**\n- Data Quality Alert: Numeric type conversion (TRY_CAST) was applied on: Valuation. Results may exclude non-numeric values; clean the source data to avoid misleading analysis."
+  },
+  {
+    "question": "top 5 unicorn companies  by valuation ?",
+    "response": "**EXECUTIVE SUMMARY**\n\nThe top 5 unicorn companies by valuation are listed below:\n\n| Company     | Valuation (USD) |\n|-------------|-----------------|\n| Bytedance   | \\$180.00        |\n| SpaceX      | \\$100.00        |\n| SHEIN       | \\$100.00        |\n| Stripe      | \\$95.00         |\n| Klarna      | \\$46.00         |\n\n**RISKS / LIMITATIONS**\n- Data Quality Alert: Numeric type conversion (TRY_CAST) was applied on: Valuation. Results may exclude non-numeric values; clean the source data to avoid misleading analysis.\n\n*Text output is truncated for readability, but the visualized chart includes the full dataset.*"
+  },
+  {
+    "question": "top 5 countries by number of unicorns?",
+    "response": "**EXECUTIVE SUMMARY**\n\n| Country       | Number of Unicorns |\n|---------------|--------------------|\n| United States | 562                |\n| China         | 173                |\n| India         | 65                 |\n| United Kingdom| 43                 |\n| Germany       | 26                 |\n\n*Text output is truncated for readability, but the visualized chart includes the full dataset.*\n\n**RISKS / LIMITATIONS**\n- No specific business risks identified."
   }
 ]

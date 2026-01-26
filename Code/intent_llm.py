@@ -81,7 +81,8 @@ class QueryInterpreter:
         self.date_cols = _split_csvish(type_schema.get("DATE COLUMNS"))
         self.text_cols = _split_csvish(type_schema.get("TEXT COLUMNS"))
         
-        self.entity_cols = list(dict.fromkeys(self.text_cols + self.date_cols))
+        # self.entity_cols = list(dict.fromkeys(self.text_cols + self.date_cols))
+        self.entity_cols = list(dict.fromkeys(self.text_cols + self.date_cols + self.numeric_cols))
         self.pk_col = str(type_schema.get("PRIMARY_KEY_ID") or "").strip() or None
 
         # Build master list of valid columns
