@@ -38,3 +38,4 @@ eval/run_outputs/
 tests
 uploads/
 tests/*.json
+tests/test_logs_langgraph1.json
