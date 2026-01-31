@@ -261,8 +261,22 @@ def visualize_data(state: AppState) -> AppState:
             df = df.dropna(subset=[y_col]).sort_values(by=x_col)
             fig = px.line(df, x=x_col, y=y_col, title=f"{y_col} over {x_col}", markers=True)
             viz_method = f"Line chart of '{y_col}' over '{x_col}'."
+        # Case B: Relationship (Scatter Plot) - NEW
+        # Triggered if intent is 'relationship' OR (2 numeric cols + high cardinality)
+        elif (current_intent in ["relationship","visualization"]) and len(num_cols) >= 2:
+            x_col = num_cols[1] # Independent
+            y_col = num_cols[0] # Dependent
+            
+            # Scatter plots need raw data, not aggregations usually
+            df[x_col] = pd.to_numeric(df[x_col], errors='coerce')
+            df[y_col] = pd.to_numeric(df[y_col], errors='coerce')
+            df = df.dropna(subset=[x_col, y_col])
+            
+            if len(df) > 2:
+                fig = px.scatter(df, x=x_col, y=y_col, title=f"Relationship: {y_col} vs {x_col}", trendline="ols")
+                viz_method = f"Scatter plot of '{y_col}' vs '{x_col}'."
 
-        # Case B: Ranking (Category + Number)
+        # Case C: Ranking (Category + Number)
         elif len(columns) >= 2:
             text_cols = [c for c in columns if c not in num_cols and c not in date_cols]
             if text_cols and num_cols:
@@ -278,7 +292,7 @@ def visualize_data(state: AppState) -> AppState:
                 else:
                     fig = px.bar(df, x=x_col, y=y_col, title=f"{y_col} by {x_col}")
                 viz_method = f"Bar chart of '{y_col}' by '{x_col}'."
-        # Case C: Distribution (Single Numeric Column)
+        # Case D: Distribution (Single Numeric Column)
         elif len(columns) == 1:
             col = columns[0]
             if is_number_robust(col):
@@ -288,20 +302,8 @@ def visualize_data(state: AppState) -> AppState:
                 fig = px.histogram(df, x=col, title=f"Distribution of {col}")
                 fig.update_layout(bargap=0.1)
                 viz_method = f"Histogram distribution of '{col}'."
-        # Case D: Relationship (Scatter Plot) - NEW
-        # Triggered if intent is 'relationship' OR (2 numeric cols + high cardinality)
-        elif (current_intent in ["relationship","visualization"]) and len(num_cols) >= 2:
-            x_col = num_cols[1] # Independent
-            y_col = num_cols[0] # Dependent
-            
-            # Scatter plots need raw data, not aggregations usually
-            df[x_col] = pd.to_numeric(df[x_col], errors='coerce')
-            df[y_col] = pd.to_numeric(df[y_col], errors='coerce')
-            df = df.dropna(subset=[x_col, y_col])
-            
-            if len(df) > 2:
-                fig = px.scatter(df, x=x_col, y=y_col, title=f"Relationship: {y_col} vs {x_col}", trendline="ols")
-                viz_method = f"Scatter plot of '{y_col}' vs '{x_col}'."
+        
+        
 
         # 3. Return viz and the quality warning
         if fig:
@@ -395,7 +397,7 @@ graph_builder.add_node("summarize", summarize)
 graph_builder.add_node("retrieve_docs", retrieve_docs)
 graph_builder.add_node("decide_sql", decide_sql)
 graph_builder.add_node("visualize_data", visualize_data)
-
+# hhhhh
 graph_builder.add_edge(START, "retrieve_docs")
 graph_builder.add_edge("retrieve_docs", "decide_sql")
 

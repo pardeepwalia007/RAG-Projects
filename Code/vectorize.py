@@ -25,8 +25,9 @@ from langchain_community.cross_encoders import HuggingFaceCrossEncoder
 # Directory to store Chroma vector database
 CHROMA_DIR = Path(r"/Users/pardeepwalia/Desktop/Data/Agentic_RAG/Data/vector_db")
 COLLECTION = "kb_md"
-
-
+print("--- LOADING GLOBAL RERANKER (Please wait...) ---")
+GLOBAL_RERANKER_MODEL = HuggingFaceCrossEncoder(model_name="cross-encoder/ms-marco-MiniLM-L-6-v2")
+print("--- RERANKER LOADED ---")
 # compute a stable hash for dataset
 def compute_dataset_hash(file_paths: list[str]) -> str:
     """
@@ -290,14 +291,9 @@ def embed_vectorize(chunks: List[Document],persist_dir: Path,force_rebuild:bool=
         search_kwargs={"k": 20} 
     )
 
-    # Initialize Reranker (The "Grader")
-    # 'ms-marco-MiniLM-L-6-v2' is small, fast, and excellent for relevance ranking.
-    # It runs locally on your Mac CPU/GPU.
-    print("--- Initializing Local Reranker ---")
-    model = HuggingFaceCrossEncoder(model_name="cross-encoder/ms-marco-MiniLM-L-6-v2")
     
     # We tell it to pick the Top 5 winners from the 20 candidates
-    compressor = CrossEncoderReranker(model=model, top_n=5)
+    compressor = CrossEncoderReranker(model=GLOBAL_RERANKER_MODEL, top_n=5)
 
     # Create Compression Retriever 
     # This wraps the base retriever. When you call .invoke(), it does the 2-step process automatically.

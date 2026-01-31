@@ -2366,5 +2366,9 @@
   {
     "question": "Which coffee products generate the most revenue over time, and do their sales trends differ?",
     "response": "**EXECUTIVE SUMMARY**\n\n* **Entity**: Latte\n* **Metric**: \\$27,866.30 total revenue\n* **Method**: aggregation with no observed filters\n* **Notes**: Aggregation is calculated over all matching records.\n\n*RISKS / LIMITATIONS*\n- Data Quality Alert: Numeric type conversion (TRY_CAST) was applied on: money. Results may exclude non-numeric values; clean the source data to avoid misleading analysis."
+  },
+  {
+    "question": "total revenue of MacBook Pro\n",
+    "response": "**Executive Summary**\n\n* **Entity**: Total Revenue for MacBook Pro\n* **Metric**: \\$295,455,950\n* **Method**: aggregation using observed filters: \"Product_Name\" ILIKE '%MacBook Pro%';\n* **Notes**: Aggregation is calculated over all matching records."
   }
 ]

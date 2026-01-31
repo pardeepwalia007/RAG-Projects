@@ -64,7 +64,10 @@ def query_agent(
         "error": None,
         "reflection_hint": "",
         "viz_data": None,
-        "data_quality_warning": "\n".join(warnings) if warnings else None
+        "data_quality_warning": "\n".join(warnings) if warnings else None,
+        "doc_evidence": "", # [ADDED] Initialize empty
+        "sql_ran": False,   # [ADDED] Initialize False
+        "intent_spec": None # [ADDED] Initialize None
     }
 
     result: Dict[str, Any] = graph.invoke(initial_state)
